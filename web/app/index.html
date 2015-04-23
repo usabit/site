@@ -1,0 +1,177 @@
+<!doctype html>
+<html class="no-js">
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css(.) styles/vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/fontawesome/css/font-awesome.css" />
+    <link rel="stylesheet" href="bower_components/angular-ui-select/dist/select.css" />
+    <link rel="stylesheet" href="bower_components/selectize/dist/css/selectize.css" />
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+</head>
+
+<body ng-app="usabitApp">
+    <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <div class="header navbar navbar-default">
+        <div class="container-fluid">            
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mainMenu">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#/"><img src="images/marca-usabit.png" alt="Usabit"></a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="mainMenu">
+                <ul class="nav navbar-nav">
+                    <li><a ng-href="#/team">team</a></li>
+                    <li><a ng-href="#/cases">cases</a></li>
+                    <li><a ng-href="#/contato">contato</a></li>
+                    <li><a href="http://www.usabit.com.br/blog">blog</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+    <div ng-view=""></div>
+    <div class="footer">
+        <div class="container-fluid">
+            <div class="row row-links">
+                <div class="col-xs-12 col-sm-3 col-logo">
+                    <a href="#/"><img src="images/marca-usabit-projetos-digitais.png" alt="Usabit - Projetos Digitais"></a>
+                </div>
+                <!--<div class="col-xs-12 col-sm-3">
+                    <ul>
+                        <li class="first-link"><a href="#">Usabit</a></li>
+                        <li><a href="#">Suporte de TI</a></li>
+                        <li><a href="#">Suporte de Front</a></li>
+                        <li><a href="#">Consultoria de Marketing</a></li>
+                        <li><a href="#">Consultoria de UX</a></li>
+                        <li><a href="#">Treinamentos</a></li>
+                    </ul>
+                </div>-->
+                <div class="col-xs-12 col-sm-3">
+                    <ul>
+                        <li class="first-link"><a href="">Sobre Nós</a></li>
+                        <li><a href="#/team">Meet the #Team</a></li>
+                        <li><a href="#/cases">Tudo que fazemos</a></li>
+                        <li><a href="#/contato">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-3">
+                    <ul>
+                        <li class="first-link"><a href="http://www.usabit.com.br/blog/">Blog</a></li>
+                        <li><a href="http://www.usabit.com.br/blog/uma-consultoria-de-desenvolvimento-de-software/">Consultoria no desenvolvimento de software</a></li>
+                        <li><a href="http://www.usabit.com.br/blog/aumente-a-qualidade-da-sua-equipe-de-desenvolvimento/">Aumente a qualidade da sua equipe de desenvolvimento</a></li>
+                        <li><a href="http://www.usabit.com.br/blog/um-suporte-no-design-do-meu-projeto/">Um suporte no design do meu projeto</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer footer-rights">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-12 col-sm-6">
+                    <p>Todo o conteúdo deste site é formado de informações livres. Esperamos que você copie, se inspire, replique, reproduza, compartilhe com toda liberdade que quiser. Viva a internet e o conteúdo aberto!</p>
+                </div>
+                <div class="col-xs-12 col-sm-3 col-sm-offset-3 col-social-list">
+                    <h6>Siga-nos</h6>
+                    <ul>
+                        <li><a target="_blank" class="social-fb" href="https://www.facebook.com/usabitdigital"><i class="fa fa-facebook"></i></a></li>
+                        <li><a target="_blank" class="social-tw" href="https://twitter.com/usabitdigital"><i class="fa fa-twitter"></i></a></li>
+                        <li><a target="_blank" class="social-lk" href="https://www.linkedin.com/company/2600370"><i class="fa fa-linkedin"></i></a></li>
+                        <li><a target="_blank" class="social-bh" href="https://github.com/usabit"><i class="fa fa-github"></i></a></li>
+                        <li><a target="_blank" class="social-it" href="http://www.instagram.com/usabit_"><i class="fa fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
+    <script>
+    (function(i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function() {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-62134612-1');
+    //ga('send', 'pageview');
+    </script>
+
+    <!-- build:js(.) scripts/oldieshim.js -->
+    <!--[if lt IE 9]>
+    <script src="bower_components/es5-shim/es5-shim.js"></script>
+    <script src="bower_components/json3/lib/json3.js"></script>
+    <![endif]-->
+    <!-- endbuild -->
+    <!-- build:js(.) scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <script src="bower_components/angular-cookies/angular-cookies.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+    <script src="bower_components/angular-touch/angular-touch.js"></script>
+    <script src="bower_components/angular-ui-select/dist/select.js"></script>
+    <script src="bower_components/sifter/sifter.js"></script>
+    <script src="bower_components/microplugin/src/microplugin.js"></script>
+    <script src="bower_components/selectize/dist/js/selectize.js"></script>
+    <script src="bower_components/waypoints/waypoints.js"></script>
+    <script src="bower_components/SHA-1/sha1.js"></script>
+    <script src="bower_components/angulartics/src/angulartics.js"></script>
+    <script src="bower_components/angulartics/src/angulartics-adobe.js"></script>
+    <script src="bower_components/angulartics/src/angulartics-chartbeat.js"></script>
+    <script src="bower_components/angulartics/src/angulartics-cnzz.js"></script>
+    <script src="bower_components/angulartics/src/angulartics-flurry.js"></script>
+    <script src="bower_components/angulartics/src/angulartics-ga-cordova.js"></script>
+    <script src="bower_components/angulartics/src/angulartics-ga.js"></script>
+    <script src="bower_components/angulartics/src/angulartics-gtm.js"></script>
+    <script src="bower_components/angulartics/src/angulartics-kissmetrics.js"></script>
+    <script src="bower_components/angulartics/src/angulartics-mixpanel.js"></script>
+    <script src="bower_components/angulartics/src/angulartics-piwik.js"></script>
+    <script src="bower_components/angulartics/src/angulartics-scroll.js"></script>
+    <script src="bower_components/angulartics/src/angulartics-segmentio.js"></script>
+    <script src="bower_components/angulartics/src/angulartics-splunk.js"></script>
+    <script src="bower_components/angulartics/src/angulartics-woopra.js"></script>
+    <script src="bower_components/angulartics/src/angulartics-marketo.js"></script>
+    <script src="bower_components/angulartics/src/angulartics-intercom.js"></script>
+    <!-- endbower -->
+    <script type="text/javascript" src="http://www.skypeassets.com/i/scom/js/skype-uri.js"></script>
+    <!-- endbuild -->
+    <!-- build:js({.tmp,app}) scripts/scripts.js -->
+    <script src="scripts/app.js"></script>
+    <script src="scripts/controllers/main.js"></script>
+    <script src="scripts/controllers/about.js"></script>
+    <script src="scripts/controllers/contato.js"></script>
+    <script src="scripts/controllers/team.js"></script>
+    <script src="scripts/controllers/contato/form.js"></script>
+    <script src="scripts/controllers/cases.js"></script>
+    <script src="scripts/directives/skypeui.js"></script>
+    <!-- endbuild -->
+</body>
+
+</html>

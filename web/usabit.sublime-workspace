@@ -1,0 +1,1396 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"marg",
+				"margin"
+			],
+			[
+				"$route",
+				"$routeParams	AngularJS"
+			],
+			[
+				"$rout",
+				"$routeParams	AngularJS"
+			],
+			[
+				"backg",
+				"background"
+			],
+			[
+				"border-co",
+				"border-color"
+			],
+			[
+				"span",
+				"span	Tag"
+			],
+			[
+				"font-",
+				"font-family"
+			],
+			[
+				"backgro",
+				"background-size"
+			],
+			[
+				"border-lef",
+				"border-left-color"
+			],
+			[
+				"box",
+				"box-sizing"
+			],
+			[
+				"ng-mouse",
+				"ng-mouseleave	AngularJS"
+			],
+			[
+				"cpfCnpj",
+				"cpfCnpjValue"
+			],
+			[
+				"primeirA",
+				"primeiroAcessoLogin"
+			],
+			[
+				"fnCalcul",
+				"fnCalcularPrumoInterval"
+			],
+			[
+				"$inter",
+				"$interval	AngularJS"
+			],
+			[
+				"mostrar",
+				"mostrarPrumoTimeout"
+			],
+			[
+				"Viagem",
+				"ViagemService"
+			],
+			[
+				"cel",
+				"cellspacing	Attr"
+			],
+			[
+				"iframe",
+				"iframeApp"
+			],
+			[
+				"ifram",
+				"iframePhonegap"
+			],
+			[
+				"body",
+				"bodyApp"
+			],
+			[
+				"bod",
+				"bodyApp"
+			],
+			[
+				"re",
+				"returnNetworkState"
+			],
+			[
+				"wind",
+				"windowHeight"
+			],
+			[
+				"select",
+				"selectRegion"
+			],
+			[
+				"news",
+				"networkState"
+			],
+			[
+				"is",
+				"isReachable"
+			],
+			[
+				"selec",
+				"selectRegion"
+			],
+			[
+				"find",
+				"findPosition"
+			],
+			[
+				"no",
+				"normal"
+			],
+			[
+				"liber",
+				"libertyweb"
+			],
+			[
+				"Ca",
+				"Câmera"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"list-st",
+				"list-style-type"
+			],
+			[
+				"new",
+				"newVersionUrl"
+			],
+			[
+				"open",
+				"openExternalUrls"
+			],
+			[
+				"visi",
+				"visibility"
+			],
+			[
+				"ne",
+				"newLatLong"
+			],
+			[
+				"to",
+				"toggleClass"
+			],
+			[
+				"background",
+				"background-repeat"
+			],
+			[
+				"text",
+				"text-transform"
+			],
+			[
+				"plans",
+				"plansTable"
+			],
+			[
+				"tex",
+				"text-transform"
+			],
+			[
+				"sto",
+				"stopPropagation"
+			],
+			[
+				"long",
+				"longitude"
+			],
+			[
+				"menu",
+				"menuList"
+			],
+			[
+				"local",
+				"localStorage"
+			],
+			[
+				"home",
+				"homeAds"
+			],
+			[
+				"ajax",
+				"ajaxShowcase"
+			],
+			[
+				"region",
+				"regionReturn"
+			],
+			[
+				"regi",
+				"regionReturn"
+			],
+			[
+				"regio",
+				"regions"
+			],
+			[
+				"text-",
+				"text-transform"
+			],
+			[
+				"s",
+				"scripts"
+			],
+			[
+				"ap",
+				"appendTo"
+			],
+			[
+				"lo",
+				"localizacao"
+			],
+			[
+				"list",
+				"ListIndicatorAccordion"
+			],
+			[
+				"add",
+				"executeAddCondition"
+			],
+			[
+				"tr",
+				"trigger"
+			],
+			[
+				"option",
+				"optionSelected"
+			],
+			[
+				"auto",
+				"autocompletesearch"
+			],
+			[
+				"btn",
+				"btn-expandir"
+			],
+			[
+				"ac",
+				"accordionHeader"
+			],
+			[
+				"remove",
+				"removeCondition"
+			],
+			[
+				"fi",
+				"fieldset"
+			],
+			[
+				"Cor",
+				"Corretora"
+			],
+			[
+				"Tit",
+				"title"
+			],
+			[
+				"bg-",
+				"bg-footer-color"
+			],
+			[
+				"cno",
+				"console"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"z",
+				"z-index"
+			],
+			[
+				"post_p",
+				"posts_per_page"
+			],
+			[
+				"of",
+				"offset"
+			],
+			[
+				"li",
+				"listing"
+			],
+			[
+				"back",
+				"background	background-attachment: scroll/fixed"
+			],
+			[
+				"up",
+				"uppercase"
+			],
+			[
+				"middle",
+				"middle-box"
+			],
+			[
+				"al",
+				"alert"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "app/index.html",
+			"settings":
+			{
+				"buffer_size": 9611,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/main.html",
+			"settings":
+			{
+				"buffer_size": 5932,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/scripts/controllers/main.js",
+			"settings":
+			{
+				"buffer_size": 5442,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/cases.html",
+			"settings":
+			{
+				"buffer_size": 2947,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/rodrigolemos/Downloads/kelly-wpcom/header.php",
+			"settings":
+			{
+				"buffer_size": 1628,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/styles/main.scss",
+			"settings":
+			{
+				"buffer_size": 13029,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/contato.html",
+			"settings":
+			{
+				"buffer_size": 2471,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/team.html",
+			"settings":
+			{
+				"buffer_size": 5568,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/scripts/app.js",
+			"settings":
+			{
+				"buffer_size": 1721,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/scripts/controllers/cases.js",
+			"settings":
+			{
+				"buffer_size": 1627,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "Packages/HTML Compressor/Html Compressor.sublime-build",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"packa",
+				"Package Control: Remove Package"
+			],
+			[
+				"list",
+				"Package Control: List Packages"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"syntax: H",
+				"Set Syntax: HTML"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"pack",
+				"Package Control: List Packages"
+			],
+			[
+				"forma",
+				"Format: Javascript"
+			],
+			[
+				"format",
+				"Format: Javascript"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"list pack",
+				"Package Control: List Packages"
+			],
+			[
+				"brow",
+				"Preferences: Browse Packages"
+			],
+			[
+				"diff",
+				"FileDiffs: Menu"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"paca",
+				"Package Control: Discover Packages"
+			],
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"remove ",
+				"Package Control: Remove Package"
+			],
+			[
+				"minif",
+				"Minify Javascript"
+			],
+			[
+				"pac",
+				"Package Control: Remove Package"
+			],
+			[
+				"javas",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"css",
+				"Set Syntax: CSS"
+			]
+		],
+		"width": 575.0
+	},
+	"console":
+	{
+		"height": 129.0,
+		"history":
+		[
+			"import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), 'wb').write(urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ','%20')).read())"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/rodrigolemos/Google Drive/Usabit/materiais/Site/Usabit.WebApp",
+		"/Users/rodrigolemos/Google Drive/Usabit/materiais/Site/Usabit.WebApp/app",
+		"/Users/rodrigolemos/Google Drive/Usabit/materiais/Site/Usabit.WebApp/app/scripts",
+		"/Users/rodrigolemos/Google Drive/Usabit/materiais/Site/Usabit.WebApp/app/scripts/controllers",
+		"/Users/rodrigolemos/Google Drive/Usabit/materiais/Site/Usabit.WebApp/app/scripts/factories",
+		"/Users/rodrigolemos/Google Drive/Usabit/materiais/Site/Usabit.WebApp/app/styles",
+		"/Users/rodrigolemos/Google Drive/Usabit/materiais/Site/Usabit.WebApp/app/views",
+		"/Users/rodrigolemos/Google Drive/Usabit/materiais/Site/Usabit.WebApp/app/views/contato"
+	],
+	"file_history":
+	[
+		"/Users/rodrigolemos/Google Drive/Usabit/materiais/Site/Usabit.WebApp/app/views/contato/form.html",
+		"/Users/rodrigolemos/Google Drive/Usabit/materiais/Site/Usabit.WebApp/app/views/contato.html",
+		"/Users/rodrigolemos/Google Drive/Usabit/materiais/Site/Usabit.WebApp/app/views/team.html",
+		"/Users/rodrigolemos/Library/Application Support/Sublime Text 3/Packages/HTML-CSS-JS Prettify/.jsbeautifyrc",
+		"/Users/rodrigolemos/Downloads/kelly-wpcom/style.css",
+		"/Users/rodrigolemos/Google Drive/Usabit/materiais/Site/Usabit.WebApp/app/scripts/factories/behance.js",
+		"/Users/rodrigolemos/Google Drive/Usabit/materiais/Site/Usabit.WebApp/app/scripts/controllers/main.js",
+		"/Users/rodrigolemos/Google Drive/Usabit/materiais/Site/Usabit.WebApp/app/views/main.html",
+		"/Users/rodrigolemos/Google Drive/Usabit/materiais/Site/Usabit.WebApp/app/scripts/controllers/about.js",
+		"/Users/rodrigolemos/Google Drive/Usabit/materiais/Site/Usabit.WebApp/app/styles/main.scss",
+		"/Users/rodrigolemos/Google Drive/Usabit/materiais/Site/Usabit.WebApp/app/scripts/controllers/contato/form.js",
+		"/Users/rodrigolemos/Google Drive/Usabit/materiais/Site/Usabit.WebApp/bower_components/angular-ui-select/dist/select.js",
+		"/Users/rodrigolemos/Google Drive/Usabit/materiais/Site/Usabit.WebApp/app/scripts/app.js",
+		"/Users/rodrigolemos/Google Drive/Usabit/materiais/Site/Usabit.WebApp/bower_components/angular/angular.js",
+		"/Users/rodrigolemos/Google Drive/Usabit/materiais/Site/Usabit.WebApp/app/scripts/controllers/team.js",
+		"/Volumes/C/srvtfs/Qx3/site/trunk/web/app/views/cases.html",
+		"/Volumes/C/srvtfs/Qx3/site/trunk/web/app/views/sobre.html",
+		"/Volumes/C/srvtfs/Qx3/site/trunk/web/app/views/main.html",
+		"/Volumes/C/srvtfs/Qx3/site/trunk/web/app/styles/main.scss",
+		"/Volumes/C/srvtfs/Qx3/site/trunk/web/app/views/contato.html",
+		"/Users/rodrigolemos/Google Drive/clientes/uncle k/verao2015/html/lookbook.html",
+		"/Users/rodrigolemos/Downloads/Simple-jQuery-Plugin-To-Create-Pinterest-Style-Grid-Layout-Pinterest-Grid/index.html",
+		"/Users/rodrigolemos/Google Drive/clientes/uncle k/inverno2015/html/js/scripts.js",
+		"/Volumes/C/srvtfs/Qx3/site/trunk/web/app/views/a-empresa.html",
+		"/Volumes/C/srvtfs/Qx3/site/trunk/web/app/views/finances.html",
+		"/Volumes/C/srvtfs/Qx3/site/trunk/web/Gruntfile.js",
+		"/Volumes/C/srvtfs/Qx3/site/trunk/web/app/index.html",
+		"/Volumes/C/srvtfs/Qx3/site/trunk/web/app/views/cases/itau-corretora.html",
+		"/Volumes/C/srvtfs/Qx3/site/trunk/web/app/views/cases/xp-educacao.html",
+		"/Volumes/C/srvtfs/Qx3/site/trunk/web/app/views/cases/rede-globo.html",
+		"/Volumes/C/srvtfs/Qx3/site/trunk/web/app/views/cases/br-partners.html",
+		"/Volumes/C/srvtfs/Qx3/site/trunk/web/app/scripts/controllers/a-empresa.js",
+		"/Volumes/C/srvtfs/Qx3/site/trunk/web/app/scripts/app.js",
+		"/Volumes/C/srvtfs/Qx3/site/trunk/web/.jshintrc",
+		"/Volumes/C/srvtfs/Qx3/site/trunk/web/app/scripts/directives/owlcarousel.js",
+		"/Volumes/C/srvtfs/Qx3/site/trunk/web/app/scripts/controllers/main.js",
+		"/Volumes/C/srvtfs/Qx3/site/trunk/web/app/views/servicos.html",
+		"/Volumes/C/srvtfs/Qx3/site/trunk/web/app/scripts/directives/fixedheader.js",
+		"/Users/rodrigolemos/Google Drive/resch it/materiais/Site temporário/index.html",
+		"/Users/rodrigolemos/Google Drive/clientes/riocup/Eventix/Product/layout 1/index.html",
+		"/Volumes/C/srvtfs/Qx3/site/trunk/web/app/scripts/directives/disableAnimation.js",
+		"/Volumes/C/srvtfs/Qx3/site/trunk/web/app/scripts/controllers/cases/br-partners.js",
+		"/Volumes/C/srvtfs/Qx3/site/trunk/web/app/scripts/controllers/cases/itau-corretora.js",
+		"/Volumes/C/srvtfs/Qx3/site/trunk/web/app/scripts/controllers/cases/xp-educacao.js",
+		"/Volumes/C/srvtfs/Qx3/site/trunk/web/app/scripts/controllers/cases/rede-globo.js",
+		"/Volumes/C/srvtfs/Qx3/site/trunk/web/bower.json",
+		"/Users/rodrigolemos/qx3/angular-teste/app/scripts/controllers/about.js",
+		"/Users/rodrigolemos/qx3/angular-teste/app/scripts/directives/disableAnimation.js",
+		"/Users/rodrigolemos/qx3/angular-teste/bower_components/angular/angular.js",
+		"/Users/rodrigolemos/Downloads/teste.html",
+		"/Users/rodrigolemos/qx3/angular-teste/app/scripts/controllers/main.js",
+		"/Users/rodrigolemos/qx3/angular-teste/app/views/main.html",
+		"/Users/rodrigolemos/qx3/angular-teste2/js/jquery.js",
+		"/Users/rodrigolemos/qx3/angular-teste2/example.js",
+		"/Users/rodrigolemos/qx3/angular-teste2/index.html",
+		"/Users/rodrigolemos/qx3/angular-teste/app/index.html",
+		"/Users/rodrigolemos/qx3/angular-teste/app/scripts/app.js",
+		"/Users/rodrigolemos/qx3/angular-teste2/js/angular.js",
+		"/Volumes/C/srvtfs/CETIP Portal Extrato/trunk/web/app/scripts/values/daterangepickerConfig.js",
+		"/Volumes/C/srvtfs/CETIP Portal Extrato/trunk/web/app/scripts/services/PreferenciaService.js",
+		"/Volumes/C/srvtfs/CETIP Portal Extrato/trunk/web/app/scripts/services/ExtratoService.js",
+		"/Volumes/C/srvtfs/CETIP Portal Extrato/trunk/web/app/index.html",
+		"/Volumes/C/srvtfs/CETIP Portal Extrato/trunk/web/app/scripts/controllers/login.js",
+		"/Volumes/C/srvtfs/CETIP Portal Extrato/trunk/web/bower.json",
+		"/Volumes/C/srvtfs/CETIP Portal Extrato/trunk/web/app/scripts/controllers/main.js",
+		"/Volumes/C/srvtfs/CETIP Portal Extrato/trunk/web/app/scripts/factories/api.js",
+		"/Volumes/C/srvtfs/CETIP Portal Extrato/trunk/web/app/views/login.html",
+		"/Volumes/C/srvtfs/CETIP Portal Extrato/trunk/web/app/scripts/app.js",
+		"/Volumes/C/srvtfs/CETIP Portal Extrato/trunk/web/app/scripts/services/LoginService.js",
+		"/Volumes/C/srvtfs/CETIP Portal Extrato/trunk/web/app/views/main.html",
+		"/Volumes/C/srvtfs/CETIP Portal Extrato/trunk/web/.jshintrc",
+		"/Volumes/C/srvtfs/CETIP Portal Extrato/trunk/web/app/views/esqueci-senha.html",
+		"/Volumes/C/srvtfs/CETIP Portal Extrato/trunk/web/app/scripts/factories/httpInterceptor.js",
+		"/Volumes/C/srvtfs/CETIP Portal Extrato/trunk/web/app/scripts/configs/staging.js",
+		"/Volumes/C/srvtfs/CETIP Portal Extrato/trunk/web/app/scripts/configs/development.js",
+		"/Volumes/C/srvtfs/CETIP Portal Extrato/trunk/web/app/scripts/configs/prodution.js",
+		"/Volumes/C/srvtfs/CETIP Portal Extrato/trunk/web/app/scripts/factories/config.js",
+		"/Volumes/C/srvtfs/CETIP Portal Extrato/trunk/web/app/scripts/directives/loader.js",
+		"/Volumes/C/srvtfs/CETIP Portal Extrato/trunk/web/app/scripts/controllers/extrato.js",
+		"/Volumes/C/srvtfs/CETIP Portal Extrato/trunk/web/app/views/extrato.html",
+		"/Volumes/C/srvtfs/CETIP Portal Extrato/trunk/web/app/styles/main.scss",
+		"/Volumes/C/srvtfs/CETIP Portal Extrato/trunk/web/app/scripts/controllers/modalAlterarInstituicao.js",
+		"/Volumes/C/srvtfs/CETIP Portal Extrato/trunk/web/app/views/nova-senha.html",
+		"/Volumes/C/srvtfs/CETIP Portal Extrato/trunk/web/app/scripts/controllers/nova-senha.js",
+		"/Volumes/C/srvtfs/CETIP Portal Extrato/trunk/web/app/views/primeiro-acesso.html",
+		"/Volumes/C/srvtfs/CETIP Portal Extrato/trunk/web/app/404.html",
+		"/Volumes/C/srvtfs/CETIP Portal Extrato/trunk/web/bower_components/angular-moment/README.md",
+		"/Volumes/C/srvtfs/CETIP Portal Extrato/trunk/web/app/scripts/controllers/primeiro-acesso.js",
+		"/Volumes/C/srvtfs/CETIP Portal Extrato/trunk/web/app/scripts/controllers/esqueci-senha.js",
+		"/Volumes/C/srvtfs/CETIP Portal Extrato/trunk/web/app/views/relatar-problemas.html",
+		"/Volumes/C/srvtfs/CETIP Portal Extrato/trunk/web/app/scripts/controllers/relatar-problemas.js",
+		"/Volumes/C/srvtfs/CETIP Portal Extrato/trunk/web/app/scripts/factories/session.js",
+		"/Volumes/C/srvtfs/CETIP Portal Extrato/trunk/web/app/favicon.ico",
+		"/Volumes/C/srvtfs/M2M_Copiloto/trunk/web/app/scripts/app.js",
+		"/Volumes/C/srvtfs/M2M_Copiloto/trunk/web/app/styles/main.scss",
+		"/Volumes/C/srvtfs/M2M_Copiloto/trunk/web/app/scripts/services/macaddressservice.js",
+		"/Volumes/C/srvtfs/M2M_Copiloto/trunk/web/Gruntfile.js",
+		"/Volumes/C/srvtfs/M2M_Copiloto/trunk/web/app/scripts/factories/config.js",
+		"/Volumes/C/srvtfs/M2M_Copiloto/trunk/web/app/views/login.html",
+		"/Volumes/C/srvtfs/M2M_Copiloto/trunk/web/app/scripts/services/viagemservice.js",
+		"/Volumes/C/srvtfs/M2M_Copiloto/trunk/web/app/scripts/configs/prodution.js",
+		"/Volumes/C/srvtfs/M2M_Copiloto/trunk/web/app/scripts/configs/development.js",
+		"/Volumes/C/srvtfs/M2M_Copiloto/trunk/web/app/scripts/services/loginservice.js",
+		"/Volumes/C/srvtfs/M2M_Copiloto/trunk/web/app/scripts/configs/staging.js",
+		"/Volumes/C/srvtfs/M2M_Copiloto/trunk/web/app/index.html",
+		"/Volumes/C/srvtfs/M2M_Copiloto/trunk/web/app/views/viagem.html",
+		"/Volumes/C/srvtfs/M2M_Copiloto/trunk/web/app/scripts/controllers/login.js",
+		"/Volumes/C/srvtfs/M2M_Copiloto/trunk/web/app/scripts/factories/httpInterceptor.js",
+		"/Volumes/C/srvtfs/M2M_Copiloto/trunk/web/app/404.html",
+		"/Volumes/C/srvtfs/M2M_Copiloto/trunk/mobile/workspace/M2MCopiloto/assets/index.html",
+		"/Volumes/C/srvtfs/M2M_Copiloto/trunk/web/app/scripts/controllers/viagem.js",
+		"/Volumes/C/srvtfs/M2M_Copiloto/trunk/web/app/favicon.ico",
+		"/Volumes/C/srvtfs/M2M_Copiloto/trunk/web/app/scripts/directives/loader.js",
+		"/Volumes/C/srvtfs/M2M_Copiloto/trunk/web/app/scripts/factories/session.js",
+		"/Volumes/C/srvtfs/M2M_Copiloto/trunk/web/app/scripts/factories/api.js",
+		"/Users/rodrigolemos/Dropbox/Compartilhados/qx3/html_hotsite_aais_xp.html",
+		"/Volumes/C/srvtfs/M2M_Copiloto/trunk/web/app/scripts/directives/timenow.js",
+		"/Volumes/C/srvtfs/M2M_Copiloto/trunk/web/app/scripts/factories/hour.js",
+		"/Volumes/C/srvtfs/M2M_Copiloto/trunk/web/bower.json",
+		"/Volumes/C/srvtfs/M2M_Copiloto/trunk/web/package.json",
+		"/Volumes/C/srvtfs/M2M_Copiloto/trunk/web/.tfignore",
+		"/Volumes/C/srvtfs/M2M_Copiloto/trunk/web/M2M.CoPiloto.WebApp/.tfignore",
+		"/Users/rodrigolemos/qx3/bitbucket/m2m-copiloto/copilotoApp/app/app.js",
+		"/Users/rodrigolemos/qx3/bitbucket/m2m-copiloto/copilotoApp/app/index.html",
+		"/Users/rodrigolemos/qx3/bitbucket/m2m-copiloto/copilotoApp/app/login/login_test.js",
+		"/Users/rodrigolemos/qx3/bitbucket/m2m-copiloto/copilotoApp/app/login/login.js",
+		"/Users/rodrigolemos/qx3/bitbucket/m2m-copiloto/copilotoApp/.travis.yml",
+		"/Users/rodrigolemos/qx3/bitbucket/m2m-copiloto/copilotoApp/app/login/login.html"
+	],
+	"find":
+	{
+		"height": 37.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			"C:\\SVN\\Itau\\Itautrade\\desenvolvimento\\trunk\\Site.ItauCorretora"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"md",
+			"transiti",
+			"transi",
+			"sm",
+			"itemProjeto",
+			"Projeto",
+			"uiSelect",
+			"uisSelect",
+			"console.log(",
+			"job",
+			"Projeto",
+			"{\n",
+			"news",
+			"class=\"active\"",
+			"menu",
+			"skill",
+			"skills",
+			"icon",
+			"a href=\"#\"",
+			"sobre-metodo",
+			"metodologia",
+			"content-sobre",
+			"content-home",
+			"11",
+			"altafinal-10",
+			"Lookbook-003",
+			"lookbook/Lookbook-003",
+			"bolsa205835",
+			"bolsa205820",
+			"bolsa205817",
+			"bolsa205816",
+			"bolsa205838",
+			"bolsa004954",
+			"bolsa205820",
+			"bolsa205817",
+			"bolsa205816",
+			"bolsa205789",
+			"img/",
+			"<li data-target=\"#carousel-example-generic\" data-slide-to=\"0\" class=\"active\"></li>\n						    <li data-target=\"#carousel-example-generic\" data-slide-to=\"1\"></li>\n						  </ol>",
+			"lookbook",
+			"15px",
+			"email",
+			"<div class=\"media-group\">",
+			"media-left",
+			"png",
+			"aaaaaa",
+			"ffffff",
+			"md",
+			"right",
+			"wrapper",
+			"css",
+			"div",
+			"itau",
+			"brp",
+			"home",
+			"brp",
+			"png",
+			"large",
+			"3",
+			"button",
+			"png",
+			"xpi",
+			"className",
+			"attr",
+			"jQuery",
+			"carousel",
+			".content-servicos ",
+			"0px 0 0 30px",
+			"0px 0 0",
+			"0px",
+			".content-servicos ",
+			"\")\"",
+			"@Url.Content(\"~/Content/",
+			"Content/",
+			"Content",
+			".pagina-oquefazemos",
+			"Content/images/clientes/",
+			"\")\"",
+			"@Url.Content(\"~/",
+			"		",
+			"			",
+			".experts ",
+			".experts > div ",
+			".pagina-oquefazemos ",
+			"o-que-fazemos",
+			".pagina-oquefazemos ",
+			".content-servicos ",
+			"pagina-porqueaqx3",
+			"scope",
+			"\"",
+			"rowLancamentos",
+			"rowTermo",
+			"rowOpcao",
+			" | currency: &quot;&quot;",
+			" | date: &#39;dd/MM/yyyy&#39;",
+			"| date: &#39;dd/MM/yyyy&#39;",
+			">\n",
+			"rowSwap",
+			"rowRendaFixa.",
+			"extract.cabecalho",
+			"ng-",
+			"ng",
+			"=\"\" ",
+			"footer",
+			"header",
+			"beatae. Dolorua",
+			"0",
+			";\n",
+			"Not",
+			"assets",
+			"Andr",
+			"https://maxcdn.bootstrapcdn.com/",
+			"navbar-actions",
+			"dd/mm/yyyy",
+			"'dd/mm/yyyy'",
+			"excelTab",
+			"tabWindowId",
+			"ExtratoService",
+			"\"",
+			"GET",
+			"LoginService",
+			"form-",
+			"copilotoApp",
+			"cpfCnpj",
+			"();\n",
+			"ExtratoCtrl",
+			"modalAlterarInstituicao.js",
+			"<td>"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"",
+			"<li><a class=\"music\" href=\"#music\">Liberty Music</a></li>",
+			"<li><a class=\"music\" href=\"#music\">Liberty Music/a></li>",
+			"i><a class=\"music\" href=\"#music\">Liberty Music/a></li>",
+			"<li><a class=\"express\" href=\"#libertyexpress\">Liberty Express</a></li>",
+			"<li><a class=\"libertywebtablet\" href=\"#libertywebtablet\">Liberty Web com Tablet</a></li>",
+			"<li><a class=\"libertyweb\" href=\"#libertyweb\">Planos Liberty Web Express</a></li>",
+			"<h6>Liberty</h6>",
+			"<li><a class=\"plans\" href=\"#plans\">Planos Liberty</a></li>",
+			"<li><a class=\"editorial\" href=\"#editorial\">Carta do Presidente</a></li>",
+			"<li><a class=\"stores\" href=\"#stores\">Fale com a TIM</a></li>",
+			"data-role=\"footer\" data-tap-toggle=\"false\"",
+			"<!--<li><a class=\"news\" href=\"#news\">Facebook</a></li>-->",
+			"\"latlong\": \"",
+			"<li><a class=\"stores\" href=\"#stores\">A TIM está onde você está</a></li>",
+			"<a id=\"menu\" class=\"btn-navegue\" href=\"#\">Navegue aqui</a>",
+			"<!--<a id=\"menu\" class=\"btn-navegue\" href=\"#\">Navegue aqui</a>-->",
+			"<!--<li><a class=\"home\" href=\"#home\">Início</a></li>-->",
+			"<li><a class=\"news\" href=\"#news\">Facebook</a></li>",
+			"<!--<li><a class=\"stores\" href=\"#stores\">A TIM está onde você está</a></li>-->",
+			"<--<li><a class=\"stores\" href=\"#stores\">A TIM está onde você está</a></li>-->",
+			"<li><a class=\"passport\" href=\"#passport\">Liberty Passport</a></li>",
+			"\"longitude\"",
+			"\"latitude\"",
+			"samsung-corby.png",
+			"../Images/Ico/",
+			"../../",
+			"<!--<li><a class=\"compare\" href=\"#compare\">Compare</a></li>-->",
+			"",
+			"<li><a class=\"stores\" href=\"#stores\">A TIM está onde você está</a></li>",
+			"<li><a class=\"liberty50\" href=\"#liberty50smartphone\">Liberty +50 com Smartphone</a></li>",
+			"grid_24",
+			"    <p><strong>",
+			"</strong>",
+			"<strong>"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 7,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "app/index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 9611,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5556,
+								5556
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1951.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "app/views/main.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5932,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5281,
+								5528
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1228.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "app/scripts/controllers/main.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5442,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1010,
+								1010
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 11.0,
+						"translation.y": 626.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "app/views/cases.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2947,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2543,
+								2543
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 497.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "/Users/rodrigolemos/Downloads/kelly-wpcom/header.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1628,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1029,
+								1029
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "app/styles/main.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 13029,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								9090,
+								9090
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 7902.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "app/views/contato.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2471,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2048,
+								2048
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 361.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "app/views/team.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5568,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5164,
+								5164
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1228.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "app/scripts/app.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1721,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								973,
+								973
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 453.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "app/scripts/controllers/cases.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1627,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1465,
+								1465
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 117.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 34.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 25.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.sftp":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "usabit.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"cockpit.js",
+				"Scripts/Views/Cockpit/itau.cockpit.js"
+			],
+			[
+				"popup",
+				"Scripts/Plugins/jquery.popUp.js"
+			],
+			[
+				"site.mas",
+				"Views/Shared/Masters/Site.Master"
+			],
+			[
+				"index",
+				"Views/Cockpit/Index.aspx"
+			],
+			[
+				"cockpit.ie",
+				"Content/css/cockpit.ie.css"
+			],
+			[
+				"cockpit.css",
+				"Content/css/cockpit.css"
+			],
+			[
+				"inde",
+				"Views/Cockpit/Index.aspx"
+			],
+			[
+				"interface",
+				"Scripts/itau.interface.js"
+			],
+			[
+				"restr",
+				"Content/css/restricted.css"
+			],
+			[
+				"histo",
+				"Views/Produtos/CompraProgramada/Historico.aspx"
+			],
+			[
+				"interfaces",
+				"Scripts/itau.interface.js"
+			],
+			[
+				"graph",
+				"Scripts/Plugins/fusionCharts/Demo/graphInfRec.json"
+			],
+			[
+				"grafic",
+				"Scripts/Grafico.js"
+			],
+			[
+				"messa",
+				"xml/messages.xml"
+			],
+			[
+				"template",
+				"Content/css/template.css"
+			],
+			[
+				"style",
+				"Views/Produtos/Carteira/NotaCorretagem/ImpressaoNota/styles.css"
+			],
+			[
+				"efault.",
+				"Views/Produtos/Carteira/NotaCorretagem/ImpressaoNota/default.css"
+			],
+			[
+				"tour.x",
+				"xml/tour.xml"
+			],
+			[
+				"gridpla",
+				"Scripts/Views/Cockpit/itau.cockpit.gridplace.js"
+			],
+			[
+				"grudo",
+				"Views/Produtos/CompraProgramada/ModalResumoDaOrdem.aspx"
+			],
+			[
+				"gridplace",
+				"Scripts/Views/Cockpit/itau.cockpit.gridplace.js"
+			],
+			[
+				"func",
+				"functions.php"
+			],
+			[
+				"template.i",
+				"Content/css/template.ie.css"
+			],
+			[
+				"templ",
+				"Content/css/template.css"
+			],
+			[
+				".asp",
+				"ModelSheet/Index.aspx"
+			],
+			[
+				".as",
+				"Global.asax"
+			],
+			[
+				"aspx",
+				"ModelSheet/Index.aspx"
+			],
+			[
+				"itau.in",
+				"Scripts/itau.interface.js"
+			],
+			[
+				"grid",
+				"Scripts/Views/Cockpit/itau.cockpit.gridplace.js"
+			],
+			[
+				"itau.cock",
+				"Scripts/Views/Cockpit/itau.cockpit.js"
+			],
+			[
+				"itau.inter",
+				"Scripts/itau.interface.js"
+			],
+			[
+				"cockpit.gr",
+				"Scripts/Views/Cockpit/itau.cockpit.gridplace.js"
+			],
+			[
+				"cock",
+				"Views/Shared/Cockpit.ascx"
+			],
+			[
+				"cockpit.as",
+				"Views/Shared/Cockpit.ascx"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 224.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

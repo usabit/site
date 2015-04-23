@@ -1,0 +1,63 @@
+<div class="view-content">
+    <div class="row-banner row-banner-cases">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-12">
+                    <h1>Somos design + tecnologia para criar produtos digitais simples e fáceis de usar.</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row row-cases row-cases-tavares">
+            <div class="col-xs-12">
+                <h3><small>Behance de</small> Rafael Tavares</h3>
+            </div>
+            <div class="col-sm-4" ng-repeat="project in rafaBehance.projects">
+                <a target="_blank" href="{{project.url}}"><h5>{{project.name}}</h5></a>
+                <img ng-src="{{project.covers['230']}}" />
+                <p class="tags"><span href="#" ng-repeat="tag in project.fields"><span class="virgula">,</span> {{tag}}</span>
+                </p>
+            </div>
+        </div>
+        <div class="row row-cases row-cases-tavares">
+            <div class="col-xs-12">
+                <h3><small>Behance de</small> Rodrigo Lemos</h3>
+            </div>
+            <span class="clearfix"></span>
+            <div class="col-xs-12" ng-show="emptyBehanceRodrigo">
+              <div class="alert alert-info" role="alert">
+                <strong>Nenhum case cadastrado até o momento.</strong>
+              </div>
+            </div>
+            <div class="col-sm-4" ng-repeat="project in rodrigoBehance.projects">
+                <a target="_blank" href="{{project.url}}"><h5>{{project.name}}</h5></a>
+                <img ng-src="{{project.covers['230']}}" />
+                <p class="tags"><span href="#" ng-repeat="tag in project.fields"><span class="virgula">,</span> {{tag}}</span>
+                </p>
+            </div>
+        </div>
+
+    </div>
+    <div class="row-cafe">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-xs-12 col-sm-6">
+              <h3>Vamos nos conhecer mais de perto? <br>Vem tomar um café com a gente!</h3>
+          </div>
+          <div class="col-xs-12 col-sm-6">
+              <ul>
+                  <li><a class="row-ideas-skype" href="skype:pdrigo?call"><i class="fa fa-skype"></i></a></li>
+                  
+                  <li class="visible-xs-inline-block"><a class="row-ideas-mobile" href="tel:21984626843"><i class="fa fa-mobile"></i></a></li>
+                  <li class="hidden-xs"><a class="row-ideas-mobile" href="#/contato"><i class="fa fa-mobile"></i></a></li>
+
+                  <!--<li><a class="row-ideas-whatsapp" href="#"><i class="fa fa-whatsapp"></i></a></li>-->
+                  <!--<li><a class="row-ideas-phone" href="#"><i class="fa fa-phone"></i></a></li>-->
+                  <li><a class="row-ideas-envelope" href="#/contato"><i class="fa fa-envelope"></i></a></li>
+              </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
