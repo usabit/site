@@ -54,6 +54,7 @@ angular
     function($rootScope, $location) {
       $rootScope.$on('$routeChangeStart', function(event, current) {
         $rootScope.currentController = current.controller;
+        $rootScope.inaugurationOpened = false;
 
 
         // Determina qual item do menu deve estar ativo.
@@ -66,6 +67,16 @@ angular
 
         // TODO: Oculta o menu
       });
+
+      $rootScope.inaugurationControl = function(boolean) {
+        console.log('InaugurationControl: ', boolean);
+
+        if (boolean) {
+          $rootScope.inaugurationOpened = true;
+        } else {
+          $rootScope.inaugurationOpened = false;
+        }
+      }
     }
   ]);
   

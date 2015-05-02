@@ -32,7 +32,7 @@ angular.module('usabitApp')
 
   	$scope.comboSuporte = [
   		//{ value: '1-1', label: 'para minha equipe de TI'},
-  		//{ value: '1-2', label: 'no desenvolvimento de htmls'},
+  		{ value: '1-2', label: 'no desenvolvimento de htmls'},
   		{ value: '1-3', label: 'no design do meu projeto'},
   		//{ value: '1-4', label: 'de Marketing'}
   	];

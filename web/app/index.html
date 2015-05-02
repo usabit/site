@@ -19,11 +19,58 @@
     <!-- endbuild -->
 </head>
 
-<body ng-app="usabitApp">
+<body ng-app="usabitApp" ng-class="{inauguration: inaugurationOpened}">
     <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
     <div class="header navbar navbar-default">
+        <div class="usabit_inauguration hidden-xs">
+            <div class="inauguration-content">
+                <div class="container-fluid">
+                    <div class="col-sm-6">
+                        <h2>Chegamos para te ajudar a entregar seus projetos de software.</h2>
+                        <p>Descubra como melhorar a qualidade dos seus projetos com o auxílio de especialistas de software. Experimente a tecnologia a favor do seu negócio e ganhe em performance de produção e vendas. Faça novas coisas através de Apps, sites e sistemas que, juntos, podem mudar o dia a dia da sua empresa.</p>
+                        <p>De forma simples - e muito mais simples do que parece, ajudamos empresas a entregar softwares com excelência, através de gestão ágil, design impecável e processos de teste que garantem o sucesso do seu produto.</p>
+                        <p><a class="btn btn-defaut" href="#/team">Conheça nosso time</a></p>
+                    </div>
+                    <div class="col-sm-6 inauguration-services">
+                        <div class="row">
+                            <div class="col-xs-12"><h3>O que já estamos fazendo?</h3></div>
+                            <div class="col-xs-12 col-md-6 inaugu-2lines">
+                                <img src="images/inaugu-01.jpg" alt="" class="pull-left">
+                                <p>Softwares com qualidade, velocidade e design</p>
+                            </div>
+                            <div class="col-xs-12 col-md-6 inaugu-2lines">
+                                <img src="images/inaugu-02.jpg" alt="" class="pull-left">
+                                <p>Apps e sites para dispositivos móveis</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12"><h3>Vem por aí...</h3></div>
+                            <div class="col-xs-12 col-md-6 inaugu-3lines">
+                                <img src="images/inaugu-03.jpg" alt="" class="pull-left">
+                                <p>Treinamentos para aprimorar o desempenho de equipes</p>
+                            </div>
+                            <div class="col-xs-12 col-md-6 inaugu-1line">
+                                <img src="images/inaugu-04.jpg" alt="" class="pull-left">
+                                <p>Social Game Design</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="inauguration-close" ng-click="inaugurationControl(false)" href=""><i class="fa fa-times"></i></a>
+                </div>
+            </div>
+            <div class="inauguration-bar">
+                <div class="container-fluid">
+                    <div class="col-xs-12">
+                        <p>Inauguramos! 21 de abril de 2015
+                            <a class="btn btn-default" ng-if="!inaugurationOpened" ng-click="inaugurationControl(true)" href="">Leia mais</a>
+                            <a class="btn btn-default" ng-if="inaugurationOpened" ng-click="inaugurationControl(false)" href="">Fechar</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="container-fluid">            
             <div class="navbar-header">
               <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mainMenu">

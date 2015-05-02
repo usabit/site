@@ -78,6 +78,145 @@ body {
 // LAYOUT
 // ================================================================================================
 
+// INAUGURATION
+.usabit_inauguration {
+  background: #fff;
+
+  .inauguration-content {
+    display: none;
+    @include transition-property(all);
+    @include transition-duration(300ms);
+    @include transition-timing-function(ease-in-out);
+
+    .container-fluid {
+      position: relative;
+      background: url(../images/bg-inauguration.jpg) no-repeat bottom right;
+    }
+
+    h2 {
+      font-size: 2.5em;
+      color: #ff4444;
+      font-weight: 400;
+      margin: 35px 0 20px;
+
+      @media (max-width: 767px) {
+        font-size: 1.6em;
+      }
+    }
+    p {
+      color: #313131;
+      font-weight: 300;
+      font-size: 1.14em;
+
+      @media (max-width: 767px) {
+        font-size: 1em;
+      }
+    }
+    .btn {
+      color: #fff;
+      background: #828282;
+      margin: 15px 0;
+      border-radius: 0;
+
+      &:hover,
+      &:active {
+        background-color: rgba(#828282, 0.8);
+      }
+    }
+    h3 {
+      font-size: 1.14em;
+      color: #ff4444;
+      font-weight: 400;
+      margin: 30px 0;
+
+      @media (max-width: 767px) {
+        margin: 30px 0 15px;
+      }
+    }
+    .inauguration-services {
+      color: #313131;
+      font-size: 1em;
+      margin-top: 18px;
+
+      @media (max-width: 767px) {
+        margin-top: -15px;
+        margin-bottom: 15px;
+      }
+
+      img {
+        margin-right: 15px;
+      }
+      p {
+        color: #313131;
+        font-size: 1em;
+      }
+
+      .inaugu-1line {
+        p {
+          margin-top: 28px;
+        }
+      }
+      .inaugu-2lines {
+        p {
+          margin-top: 20px;
+        }
+      }
+      .inaugu-3lines {
+        p {
+          margin-top: 7px;
+        }
+      }
+    }
+
+    .inauguration-close {
+      position: absolute;
+      top: 0;
+      right: 15px;
+      font-size: 2em;
+      color: #ff4444;
+    }
+  }
+
+  .inauguration-bar {
+    background: #ff4444;
+    text-align: center;
+    padding: 15px 0;
+
+    p {
+      color: #fff;
+      font-size: 1.28em;
+      margin: 0;
+    }
+    .btn {
+      color: #ff4444;
+      background-color: #fff;
+      border-radius: 0;
+      margin-left: 10px;
+      border: 0;
+
+      &:hover,
+      &:active {
+        border: 0;
+        background-color: rgba(255,255,255,0.8)
+      }
+    }
+  }
+}
+.inauguration {
+  .usabit_inauguration {
+    .inauguration-content {
+      display: block;
+    }
+  }
+  .row-banner {
+    margin-top: 441px;
+
+    @media (min-width: 768px) and (max-width: 991px) {
+      margin-top: 620px
+    }
+  }
+}
+
 // HEADER
 .header {
   position: absolute;
@@ -130,7 +269,7 @@ body {
 
   @media (max-width: 767px) {
     .navbar-collapse {
-      background: rgba(255,255,255,0.8);
+      background: rgba(255,255,255,0.9);
       min-height: 235px;
     }
     .nav {
@@ -262,9 +401,16 @@ body {
   position: relative;
   z-index: 1;
   min-height: 402px;
-  margin-top: 0;
+  margin-top: 62px;
   background-size: cover;
   background-repeat: no-repeat;
+  @include transition-property(all);
+  @include transition-duration(300ms);
+  @include transition-timing-function(ease-in-out);
+
+  @media (max-width: 767px) {
+    margin-top: 0;
+  }
 
   h1 {
     font-size: 3em;
