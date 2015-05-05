@@ -3,41 +3,56 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-xs-12">
-                    <h1>Somos design + tecnologia para criar produtos digitais simples e fáceis de usar.</h1>
+                    <h1>Apresentamos um pouco do que fizemos<br> nos últimos 10 anos.</h1>
                 </div>
             </div>
         </div>
     </div>
-    <div class="container">
-        <div class="row row-cases row-cases-tavares">
-            <div class="col-xs-12">
-                <h3><small>Behance de</small> Rafael Tavares</h3>
-            </div>
-            <div class="col-sm-4" ng-repeat="project in rafaBehance.projects">
-                <a target="_blank" href="{{project.url}}"><h5>{{project.name}}</h5></a>
-                <img ng-src="{{project.covers['230']}}" />
-                <p class="tags"><span href="#" ng-repeat="tag in project.fields"><span class="virgula">,</span> {{tag}}</span>
-                </p>
-            </div>
-        </div>
-        <div class="row row-cases row-cases-tavares">
-            <div class="col-xs-12">
-                <h3><small>Behance de</small> Rodrigo Lemos</h3>
-            </div>
-            <span class="clearfix"></span>
-            <div class="col-xs-12" ng-show="emptyBehanceRodrigo">
-              <div class="alert alert-info" role="alert">
-                <strong>Nenhum case cadastrado até o momento.</strong>
+    <div class="row-case-list">
+      <div class="container-fluid">
+          <div class="row row-cases row-cases-tavares">
+              <div class="col-xs-12">
+                <h2>Nossos cases</h2>
               </div>
-            </div>
-            <div class="col-sm-4" ng-repeat="project in rodrigoBehance.projects">
-                <a target="_blank" href="{{project.url}}"><h5>{{project.name}}</h5></a>
-                <img ng-src="{{project.covers['230']}}" />
-                <p class="tags"><span href="#" ng-repeat="tag in project.fields"><span class="virgula">,</span> {{tag}}</span>
-                </p>
-            </div>
-        </div>
+              <div class="col-xs-6 col-sm-4 col-md-3" ng-repeat="project in rafaBehance.projects">
+                <div class="panel">
+                  <div class="panel-body">
+                    <a target="_blank" href="{{project.url}}">
+                      <img ng-src="{{project.covers['230']}}" />
+                      <h5>{{project.name}}</h5>
+                      <h6>por {{project.owners[0].display_name}}</h6>
+                      <p class="tags"><span href="#" ng-repeat="tag in project.fields"><span class="virgula">,</span> {{tag}}</span>
+                      </p>
+                      <div class="project-stats">
+                        <span ng-if="project.stats.appreciations" class="project-stat project-appreciations"><i class="fa fa-thumbs-up"></i> {{project.stats.appreciations}}</span>
+                        <span ng-if="project.stats.views" class="project-stat project-views"><i class="fa fa-eye"></i> {{project.stats.views}}</span>
+                        <span ng-if="project.stats.comments" class="project-stat project-comments"><i class="fa fa-comment"></i> {{project.stats.comments}}</span>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-6 col-sm-4 col-md-3" ng-repeat="project in rodrigoBehance.projects">
+                <div class="panel">
+                  <div class="panel-body">
+                    <a target="_blank" href="{{project.url}}">
+                      <img ng-src="{{project.covers['230']}}" />
+                      <h5>{{project.name}}</h5>
+                      <h6>por {{project.owners[0].display_name}}</h6>
+                      <p class="tags"><span href="#" ng-repeat="tag in project.fields"><span class="virgula">,</span> {{tag}}</span>
+                      </p>
+                      <div class="project-stats">
+                        <span ng-if="project.stats.appreciations" class="project-stat project-appreciations"><i class="fa fa-thumbs-up"></i> {{project.stats.appreciations}}</span>
+                        <span ng-if="project.stats.views" class="project-stat project-views"><i class="fa fa-eye"></i> {{project.stats.views}}</span>
+                        <span ng-if="project.stats.comments" class="project-stat project-comments"><i class="fa fa-comment"></i> {{project.stats.comments}}</span>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+          </div>
 
+      </div>
     </div>
     <div class="row-cafe">
       <div class="container-fluid">

@@ -93,7 +93,7 @@ angular.module('usabitApp')
         case '2':
           switch ($scope.selectedComboProjeto.selected.value) {
             case '2-1':
-              $location.path('/contato/form/site');
+              $location.path('/dez-motivos-para-contratar-nosso-time');
               break;
             case '2-2':
               $location.path('/contato/form/sistema');

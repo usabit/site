@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+<url>
+  <loc>http://usabit.com.br/</loc>
+  <lastmod>2015-05-05T00:12:13+00:00</lastmod>
+</url>
+
+<url>
+  <loc>http://usabit.com.br/#/team</loc>
+  <lastmod>2015-05-05T00:12:13+00:00</lastmod>
+</url>
+
+<url>
+  <loc>http://usabit.com.br/#/cases</loc>
+  <lastmod>2015-05-05T00:12:13+00:00</lastmod>
+</url>
+
+<url>
+  <loc>http://usabit.com.br/#/contato</loc>
+  <lastmod>2015-05-05T00:12:13+00:00</lastmod>
+</url>
+
+<url>
+  <loc>http://usabit.com.br/blog</loc>
+  <lastmod>2015-05-05T00:12:13+00:00</lastmod>
+</url>
+
+</urlset>

@@ -47,6 +47,10 @@ angular
         templateUrl: 'views/cases.html',
         controller: 'CasesCtrl'
       })
+      .when('/:postName', {
+        templateUrl: 'views/post.html',
+        controller: 'PostCtrl'
+      })
       .otherwise({
         redirectTo: '/'
       });
@@ -76,7 +80,7 @@ angular
         } else {
           $rootScope.inaugurationOpened = false;
         }
-      }
+      };
     }
   ]);
   
