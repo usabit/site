@@ -17,6 +17,7 @@ angular
     'ngSanitize',
     'ngTouch',
     'ui.select',
+    'ui.bootstrap',
     'angulartics', 
     'angulartics.google.analytics'
   ])
@@ -39,9 +40,9 @@ angular
         controller: 'TeamCtrl'
       })
       .when('/contato/form/:type', {
-        templateUrl: 'views/contato/form.html',
-        controller: 'ContatoFormCtrl'
-        //redirectTo: '/contato'
+        //templateUrl: 'views/contato/form.html',
+        //controller: 'ContatoFormCtrl'
+        redirectTo: '/contato'
       })
       .when('/cases', {
         templateUrl: 'views/cases.html',
