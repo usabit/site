@@ -23,7 +23,7 @@ angular.module('usabitApp')
     $scope.sendMail = function(){
     	contatoService.save($scope.formMail, function(result) {
     		console.log('Sucesso: ', result);
-    		$scope.alerts.push({type: 'sucess', msg: 'Mensagem enviada com sucesso.'});
+    		$scope.alerts.push({type: 'success', msg: 'Mensagem enviada com sucesso.'});
 
     		$scope.contactForm.$setPristine();
 
