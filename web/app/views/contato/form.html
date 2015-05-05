@@ -9,25 +9,25 @@
         </div>
     </div>
   <div class="container-fluid">
-    <form class="row row-form">
+    <form class="row row-form" ng-submit="sendMail()">
 		<div class="col-sm-6">
 			<div class="form-group">
 				<label for="exampleInputEmail1">Nome</label>
-				<input type="email" class="form-control" id="exampleInputEmail1" placeholder="">
+				<input type="text" ng-model="formMail.Nome" class="form-control" id="exampleInputEmail1" placeholder="">
 			</div>
 			<div class="form-group">
 				<label for="exampleInputEmail1">Email</label>
-				<input type="email" class="form-control" id="exampleInputEmail1" placeholder="">
+				<input type="email" ng-model="formMail.Email" class="form-control" id="exampleInputEmail1" placeholder="">
 			</div>
 			<div class="form-group">
 				<label for="exampleInputEmail1">Assunto</label>
-				<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Um projeto novo de um {{assunto}}">
+				<input type="text" ng-model="formMail.Assunto" class="form-control" id="exampleInputEmail1" placeholder="Um projeto novo de um {{assunto}}">
 			</div>
 		</div>
 		<div class="col-sm-6">
 			<div class="form-group">
 				<label for="exampleInputEmail1">Mensagem</label>
-				<textarea type="email" class="form-control" id="exampleInputEmail1" rows="6" placeholder="">
+				<textarea ng-model="formMail.Mensagem" class="form-control" id="exampleInputEmail1" rows="6" placeholder="">
 				</textarea>
 			</div>
 		
