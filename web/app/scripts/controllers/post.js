@@ -25,6 +25,7 @@ angular.module('usabitApp')
     		console.log('Sucesso: ', result);
     		$scope.alerts.push({type: 'success', msg: 'Mensagem enviada com sucesso.'});
 
+    		$scope.formMail = angular.copy(oriFormMail);
     		$scope.contactForm.$setPristine();
 
     		$timeout(function() {
