@@ -997,6 +997,10 @@ body {
   .post-column {
     background-color: #ef4c32;
 
+    @media (max-width: 767px) {
+      margin-top: 20px;
+    }
+
     form {
       margin: 0 15px 45px 35px;
       position: relative;
@@ -1011,6 +1015,18 @@ body {
         position: absolute;
         left: -50px;
         top: 0;
+      }
+
+      @media (max-width: 767px) {
+        margin-left: 15px;
+
+        &:before {
+          border-left: 30px solid transparent;
+          border-right: 30px solid transparent;
+          border-top: 25px solid #fff;
+          top: -40px;
+          left: -10px;
+        }
       }
 
       .form-control {
@@ -1048,6 +1064,10 @@ body {
       font-size: 1.42em;
       margin: 30px 0 20px;
       line-height: 150%;
+
+      @media (max-width: 767px) {
+        margin-top: 40px;
+      }
     }
   }
 }
