@@ -1,64 +1,114 @@
 <ng-include src="'views/header.tpl.html'"></ng-include>
-
 <div class="view-content">
-    <div class="row-banner row-banner-home">
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-xs-12">
-                <h1>Trabalhe com os melhores profissionais de TI e Design sem pagar caro por isso. <br>E sem carregar custos fixos!</h1>
-            </div>
-          </div>
-        </div>
-    </div>
-    <div class="row-needs">
-      <div class="container-fluid">
-        <div class="row">
-            <div class="col-xs-12">
-                <h2>Do que você precisa?</h2>
-                <div class="row">
-                    <div class="col-xs-12">
-                        <ui-select ng-model="selectedComboType.selected" theme="selectize" ng-disabled="disabled" style="width: 200px;">
-                            <ui-select-match placeholder="">{{$select.selected.label}}</ui-select-match>
-                            <ui-select-choices repeat="type in comboType | filter: $select.search">
-                                <span ng-bind-html="type.label | highlight: $select.search"></span>
-                            </ui-select-choices>
-                        </ui-select>
-                        <ui-select ng-show="isOption1" ng-model="selectedComboSuporte.selected" theme="selectize" ng-disabled="disabled" style="width: 300px;">
-                            <ui-select-match placeholder="">{{$select.selected.label}}</ui-select-match>
-                            <ui-select-choices repeat="itemSuporte in comboSuporte | filter: $select.search">
-                                <span ng-bind-html="itemSuporte.label | highlight: $select.search"></span>
-                            </ui-select-choices>
-                        </ui-select>
-                        <ui-select ng-show="isOption2" ng-model="selectedComboProjeto.selected" theme="selectize" ng-disabled="disabled" style="width: 340px;">
-                            <ui-select-match placeholder="">{{$select.selected.label}}</ui-select-match>
-                            <ui-select-choices repeat="itemProjeto in comboProjeto | filter: $select.search">
-                                <span ng-bind-html="itemProjeto.label | highlight: $select.search"></span>
-                            </ui-select-choices>
-                        </ui-select>
-                        <ui-select ng-show="isOption3" ng-model="selectedComboTreinamento.selected" theme="selectize" ng-disabled="disabled" style="width: 490px;">
-                            <ui-select-match placeholder="">{{$select.selected.label}}</ui-select-match>
-                            <ui-select-choices repeat="itemTreinamento in comboTreinamento | filter: $select.search">
-                                <span ng-bind-html="itemTreinamento.label | highlight: $select.search"></span>
-                            </ui-select-choices>
-                        </ui-select>
-                        <ui-select ng-show="isOption4" ng-model="selectedComboConsultoria.selected" theme="selectize" ng-disabled="disabled" style="width: 360px;">
-                            <ui-select-match placeholder="">{{$select.selected.label}}</ui-select-match>
-                            <ui-select-choices repeat="itemConsultoria in comboConsultoria | filter: $select.search">
-                                <span ng-bind-html="itemConsultoria.label | highlight: $select.search"></span>
-                            </ui-select-choices>
-                        </ui-select>
-                        <a class="btn btn-primary" href="" ng-click="submit()">começar</a>
+    <!-- Carousel -->
+    <div class="home-carousel">
+        <div owlcarousel owl-options="owlOptions" class="owl-carousel">
+            <div class="item" ng-repeat="item in owlItens">
+                <div class="owl-carousel-item {{item.className}}">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-xs-12 col-md-6">
+                                <div class="well well-lg">
+                                    <h1>{{item.title}}</h1>
+                                    <p class="hidden-xs">{{item.text}}</p>
+                                    <p><a href="{{item.url}}">{{item.callToAction}} <i class="fa fa-chevron-circle-right"></i></a></p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-      </div>
+        <div class="customNavigation">
+            <a class="btn owlcarousel_prev"><span><i class="fa fa-chevron-left"></i></span></a>
+            <a class="btn owlcarousel_next"><span><i class="fa fa-chevron-right"></i></span></a>
+        </div>
     </div>
+    <div class="row-needs">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-12">
+                    <h2>Do que você precisa?</h2>
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <ui-select ng-model="selectedComboType.selected" theme="selectize" ng-disabled="disabled" style="width: 200px;">
+                                <ui-select-match placeholder="">{{$select.selected.label}}</ui-select-match>
+                                <ui-select-choices repeat="type in comboType | filter: $select.search">
+                                    <span ng-bind-html="type.label | highlight: $select.search"></span>
+                                </ui-select-choices>
+                            </ui-select>
+                            <ui-select ng-show="isOption1" ng-model="selectedComboSuporte.selected" theme="selectize" ng-disabled="disabled" style="width: 300px;">
+                                <ui-select-match placeholder="">{{$select.selected.label}}</ui-select-match>
+                                <ui-select-choices repeat="itemSuporte in comboSuporte | filter: $select.search">
+                                    <span ng-bind-html="itemSuporte.label | highlight: $select.search"></span>
+                                </ui-select-choices>
+                            </ui-select>
+                            <ui-select ng-show="isOption2" ng-model="selectedComboProjeto.selected" theme="selectize" ng-disabled="disabled" style="width: 340px;">
+                                <ui-select-match placeholder="">{{$select.selected.label}}</ui-select-match>
+                                <ui-select-choices repeat="itemProjeto in comboProjeto | filter: $select.search">
+                                    <span ng-bind-html="itemProjeto.label | highlight: $select.search"></span>
+                                </ui-select-choices>
+                            </ui-select>
+                            <ui-select ng-show="isOption3" ng-model="selectedComboTreinamento.selected" theme="selectize" ng-disabled="disabled" style="width: 490px;">
+                                <ui-select-match placeholder="">{{$select.selected.label}}</ui-select-match>
+                                <ui-select-choices repeat="itemTreinamento in comboTreinamento | filter: $select.search">
+                                    <span ng-bind-html="itemTreinamento.label | highlight: $select.search"></span>
+                                </ui-select-choices>
+                            </ui-select>
+                            <ui-select ng-show="isOption4" ng-model="selectedComboConsultoria.selected" theme="selectize" ng-disabled="disabled" style="width: 360px;">
+                                <ui-select-match placeholder="">{{$select.selected.label}}</ui-select-match>
+                                <ui-select-choices repeat="itemConsultoria in comboConsultoria | filter: $select.search">
+                                    <span ng-bind-html="itemConsultoria.label | highlight: $select.search"></span>
+                                </ui-select-choices>
+                            </ui-select>
+                            <a class="btn btn-primary" href="" ng-click="submit()">Começar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--<div class="row-common-cases">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-12">
+                    <h2>5 Casos de clientes mais comuns</h2>
+
+                    <div class="row">
+                        <div class="col-xs-12 col-md-5">
+                            <h3>Cansado fornecedor atual.</h3>
+                        </div>
+                        <div class="col-xs-12 col-md-7">
+                            <p>Você não é o único. Muitos clientes nos procuram simplesmente cansaram da falta de transparência e fornecedores que não entregam o que prometem.</p>
+                            <p>Aqui falamos com orgulho: relacionamento e qualidade são alvos primários da nossa equipe. Nós queremos ser parceiros de confiança.</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-md-7">
+                            <h3>Cansado fornecedor atual.</h3>
+                        </div>
+                        <div class="col-xs-12 col-md-5">
+                            <p>Você não é o único. Muitos clientes nos procuram simplesmente cansaram da falta de transparência e fornecedores que não entregam o que prometem.</p>
+                            <p>Aqui falamos com orgulho: relacionamento e qualidade são alvos primários da nossa equipe. Nós queremos ser parceiros de confiança.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>-->
     <div class="container-fluid">
         <div class="row row-advantages">
             <div class="col-xs-12">
-                <h2>Um tanto de vantagens imediatas</h2>
-                <dl class="dl-horizontal">
+                <h2>Um tanto de vantagens imediatas ;)</h2>
+                <ul>
+                    <li>Perfis Senior que solucionam problemas  de forma rápida <span class="like-1"><i class="fa fa-thumbs-o-up"></i></span></li>
+                    <li>Experiência com pequenos ou grandes projetos <span class="like-2"><i class="fa fa-thumbs-o-up"></i></span></li>
+                    <li>Alta qualidade em todas as entregas <span class="like-3"><i class="fa fa-thumbs-o-up"></i></span></li>
+                    <li>Cuidado em cada pixel com Design e Front-end impecáveis <span class="like-4"><i class="fa fa-thumbs-o-up"></i></span></li>
+                    <li>Mobile em primeiro lugar, sem limite de tamanho de tela <span class="like-5"><i class="fa fa-thumbs-o-up"></i></span></li>
+                    <li>Reports e visibilidade total do andamento do trabalho <span class="like-6"><i class="fa fa-thumbs-o-up"></i></span></li>
+                </ul>
+                <!--<dl class="dl-horizontal">
                     <dt>Profissionais de perfil Senior...</dt>
                     <dd>...problemas resolvidos de forma rápida.</dd>
                     <dt>Experiência com grandes projetos...</dt>
@@ -73,27 +123,27 @@
                     <dd>...sem aumentar o quadro</dd>
                     <dt>Reports e visibilidade total...</dt>
                     <dd>...você acompanha cada passo da equipe</dd>
-                </dl>
+                </dl>-->
             </div>
         </div>
     </div>
     <div class="row-ideas">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-xs-12 col-sm-6">
-              <h3>Você pode nos encontrar por aqui:</h3>
-          </div>
-          <div class="col-xs-12 col-sm-6">
-              <ul>
-                  <li><a class="row-ideas-skype" href="skype:pdrigo?call"><i class="fa fa-skype"></i></a></li>
-                  <li class="visible-xs-inline-block"><a class="row-ideas-mobile" href="tel:21984626843"><i class="fa fa-mobile"></i></a></li>
-                  <li class="hidden-xs"><a class="row-ideas-mobile" href="#/contato"><i class="fa fa-mobile"></i></a></li>
-                  <!--<li><a class="row-ideas-whatsapp" href="#"><i class="fa fa-whatsapp"></i></a></li>-->
-                  <!--<li><a class="row-ideas-phone" href="#"><i class="fa fa-phone"></i></a></li>-->
-                  <li><a class="row-ideas-envelope" href="#/contato"><i class="fa fa-envelope"></i></a></li>
-              </ul>
-          </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-12 col-sm-6">
+                    <h3>Você pode nos encontrar por aqui:</h3>
+                </div>
+                <div class="col-xs-12 col-sm-6">
+                    <ul>
+                        <li><a class="row-ideas-skype" href="skype:pdrigo?call"><i class="fa fa-skype"></i></a></li>
+                        <li class="visible-xs-inline-block"><a class="row-ideas-mobile" href="tel:21984626843"><i class="fa fa-mobile"></i></a></li>
+                        <li class="hidden-xs"><a class="row-ideas-mobile" href="#/contato"><i class="fa fa-mobile"></i></a></li>
+                        <!--<li><a class="row-ideas-whatsapp" href="#"><i class="fa fa-whatsapp"></i></a></li>-->
+                        <!--<li><a class="row-ideas-phone" href="#"><i class="fa fa-phone"></i></a></li>-->
+                        <li><a class="row-ideas-envelope" href="#/contato"><i class="fa fa-envelope"></i></a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
 </div>

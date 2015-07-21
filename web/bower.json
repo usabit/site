@@ -16,7 +16,8 @@
     "angular-ui-select": "~0.11.2",
     "selectize": "~0.8.5",
     "angulartics": "~0.17.2",
-    "angular-bootstrap": "~0.13.0"
+    "angular-bootstrap": "~0.13.0",
+    "angular-owlcarousel": "https://bitbucket.org/qx3/angular-owlcarousel"
   },
   "devDependencies": {
     "angular-mocks": "~1.3.0",

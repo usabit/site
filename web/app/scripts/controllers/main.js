@@ -80,10 +80,10 @@ angular.module('usabitApp')
               window.location.href = '/blog/um-suporte-para-minha-equipe-de-ti';
               break;
             case '1-2':
-              window.location.href = '/blog/um-suporte-no-desenvolvimento-de-htmls';
+              $location.path('/um-suporte-no-desenvolvimento-de-htmls');
               break;
             case '1-3':
-              window.location.href = '/blog/um-suporte-no-design-do-meu-projeto';
+              $location.path('/um-suporte-no-design-do-meu-projeto');
               break;
             case '1-4':
               window.location.href = '/blog/um-suporte-de-marketing';
@@ -109,7 +109,7 @@ angular.module('usabitApp')
         case '3':
           switch ($scope.selectedComboTreinamento.selected.value) {
             case '3-1':
-              window.location.href = '/blog/aumente-a-qualidade-da-sua-equipe-de-desenvolvimento';
+              $location.path('/aumente-a-qualidade-da-sua-equipe');
               break;
             case '3-2':
               window.location.href = '/blog/minha-empresa-relevante-no-google';
@@ -128,7 +128,7 @@ angular.module('usabitApp')
               window.location.href = '/blog/uma-consultoria-de-marketing-online';
               break;
             case '4-3':
-              window.location.href = '/blog/uma-consultoria-de-desenvolvimento-de-software';
+              $location.path('/uma-consultoria-de-desenvolvimento-de-software');
               break;
             case '4-4':
               window.location.href = '/blog/uma-consultoria-de-minificacao-de-codigo';
@@ -139,4 +139,29 @@ angular.module('usabitApp')
       //console.log($scope.selectedComboSuporte, $scope.selectedComboProjeto, $scope.selectedComboTreinamento, $scope.selectedComboConsultoria);
     };
 
+
+    // OWL CAROUSEL
+    // ===================================================================
+    $scope.owlItens = [{
+            className: 'carousel-01',
+            title: 'Experimente trabalhar com uma equipe de desenvolvimento de software simples e eficiente.',
+            text: 'Aqui na usabit não filosofamos nem reinventamos a roda. Nós somos um pequeno escritório que desenha softwares com perfeição. Em todos os aspectos.',
+            callToAction: 'Mas temos grandes planos, quer saber?',
+            url: '#/nosso-jeito'
+        }, {
+            className: 'carousel-02',
+            title: 'Para ganhar velocidade nos leilões que você participa, peça ajuda aos nossos ninjas.',
+            text: 'Com o Spidy.Ninja, cadastre dezenas, centenas ou milhares de produtos de forma eficiente, reduzindo erros e em menos da metade do tempo.',
+            callToAction: 'Conheça o site exclusivo do Spidy',
+            url: 'http://spidy.ninja/'
+        }];
+
+        $scope.owlOptions = {
+            items: 1, //10 items above 1000px browser width
+            itemsDesktop: [1199,1],
+            itemsDesktopSmall: [979,1],
+            itemsTablet:[768, 1],
+            pagination: false,
+            autoPlay: 10000
+        };
   });
