@@ -54,15 +54,15 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#/"><img src="images/marca-usabit-projetos-digitais.png" alt="Usabit - Projetos Digitais"></a>
+          <a class="navbar-brand" href="{{path}}/"><img src="images/marca-usabit-projetos-digitais.png" alt="Usabit - Projetos Digitais"></a>
         </div>
 
         <div class="collapse navbar-collapse" id="mainMenu">
             <ul class="nav navbar-nav">
-                <li><a ng-href="#/team">team</a></li>
+                <li ng-class="{active:isActive('team')}"><a ng-href="{{path}}/team">team</a></li>
                 <!--<li><a ng-href="#/cases">cases</a></li>-->
-                <li><a ng-href="#/contato">contato</a></li>
-                <li><a href="http://www.usabit.com.br/blog">blog</a></li>
+                <li ng-class="{active:isActive('contato')}"><a ng-href="{{path}}/contato">contato</a></li>
+                <li ng-class="{active:isActive('blog')}"><a href="{{path}}/blog">blog</a></li>
             </ul>
             <div class="nav navbar-nav navbar-right nav-social-list">
                 <ul>

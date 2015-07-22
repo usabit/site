@@ -80,10 +80,10 @@ angular.module('usabitApp')
               window.location.href = '/blog/um-suporte-para-minha-equipe-de-ti';
               break;
             case '1-2':
-              $location.path('/um-suporte-no-desenvolvimento-de-htmls');
+              $location.path('/blog/um-suporte-no-desenvolvimento-de-htmls');
               break;
             case '1-3':
-              $location.path('/um-suporte-no-design-do-meu-projeto');
+              $location.path('/blog/um-suporte-no-design-do-meu-projeto');
               break;
             case '1-4':
               window.location.href = '/blog/um-suporte-de-marketing';
@@ -93,7 +93,7 @@ angular.module('usabitApp')
         case '2':
           switch ($scope.selectedComboProjeto.selected.value) {
             case '2-1':
-              $location.path('/dez-motivos-para-contratar-nosso-time');
+              $location.path('/blog/dez-motivos-para-contratar-nosso-time');
               break;
             case '2-2':
               $location.path('/contato/form/sistema');
@@ -109,7 +109,7 @@ angular.module('usabitApp')
         case '3':
           switch ($scope.selectedComboTreinamento.selected.value) {
             case '3-1':
-              $location.path('/aumente-a-qualidade-da-sua-equipe');
+              $location.path('/blog/aumente-a-qualidade-da-sua-equipe');
               break;
             case '3-2':
               window.location.href = '/blog/minha-empresa-relevante-no-google';
@@ -128,7 +128,7 @@ angular.module('usabitApp')
               window.location.href = '/blog/uma-consultoria-de-marketing-online';
               break;
             case '4-3':
-              $location.path('/uma-consultoria-de-desenvolvimento-de-software');
+              $location.path('/blog/uma-consultoria-de-desenvolvimento-de-software');
               break;
             case '4-4':
               window.location.href = '/blog/uma-consultoria-de-minificacao-de-codigo';
@@ -147,7 +147,7 @@ angular.module('usabitApp')
             title: 'Experimente trabalhar com uma equipe de desenvolvimento de software simples e eficiente.',
             text: 'Aqui na usabit não filosofamos nem reinventamos a roda. Nós somos um pequeno escritório que desenha softwares com perfeição. Em todos os aspectos.',
             callToAction: 'Mas temos grandes planos, quer saber?',
-            url: '#/nosso-jeito'
+            url: $rootScope.path + '/blog'
         }, {
             className: 'carousel-02',
             title: 'Para ganhar velocidade nos leilões que você participa, peça ajuda aos nossos ninjas.',

@@ -1,0 +1,53 @@
+<ng-include src="'views/header.tpl.html'"></ng-include>
+
+<div class="view-content view-content-post">
+	<div class="row-banner row-banner-post">
+    </div>
+    <div class="container-fluid">
+      <div class="row">
+      	<div class="col-xs-12 col-sm-8 col-md-7 post-content">
+      		<div class="post">
+      			<h2><a ng-href="{{path}}/blog/uma-consultoria-de-desenvolvimento-de-software">Uma consultoria de desenvolvimento de software</a></h2>
+      			<p>Segundo a CHAOS Manifesto, apenas 14% dos projetos de desenvolvimento de software utilizando a metodologia tradicional de desenvolvimento (waterfall) são bem sucedidos. De fato, não é difícil nos depararmos com a fatia dos projetos que falham. Vemos muitos casos de prazos e orçamentos estourados, além dos resultados não correspondendo com às expectativas dos clientes.</p>
+      			<p><a class="post-more" ng-href="{{path}}/blog/uma-consultoria-de-desenvolvimento-de-software">Leia mais <i class="fa fa-arrow-circle-right"></i></a></p>
+      		</div>
+      		<div class="post">
+      			<h2><a ng-href="{{path}}/blog/um-suporte-no-desenvolvimento-de-htmls">Um suporte no desenvolvimento de htmls</a></h2>
+      			<p>Sua equipe de desenvolvimento esta preparada para transformar aquele lindo layout em PSD aprovado pelo cliente em código html? Provavelmente sua resposta será <b>não</b>. No fim, seu cliente fica desapontando com o resultado final que é bem diferente do aprovado por ele no inicio do projeto.</p>
+      			<p><a class="post-more" ng-href="{{path}}/blog/um-suporte-no-desenvolvimento-de-htmls">Leia mais <i class="fa fa-arrow-circle-right"></i></a></p>
+      		</div>
+      		<div class="post">
+      			<h2><a ng-href="{{path}}/blog/aumente-a-qualidade-da-sua-equipe">Aumente a qualidade da sua equipe de desenvolvimento</a></h2>
+      			<p>Com a complexidade dos projetos, dificuldade relacionadas a processos ou a falta dele, está cada vez mais difícil controlar a qualidade de uma equipe de desenvolvimento. Nossa proposta se baseai em simplificar o desenvolvimento de software, utilizando metodologias e técnicas de desenvolvimento ágil.</p>
+      			<p><a class="post-more" ng-href="{{path}}/blog/aumente-a-qualidade-da-sua-equipe">Leia mais <i class="fa fa-arrow-circle-right"></i></a></p>
+      		</div>
+      		<div class="post">
+      			<h2><a ng-href="{{path}}/blog/um-suporte-no-design-do-meu-projeto">Um suporte no design do meu projeto</a></h2>
+      			<p>Desenvolver um software é uma engenharia complexa que envolve diferentes níveis de conhecimento e disciplinas. Além de prezar pela qualidade do código simples, eficiente, aprovado, coberto por testes e inúmeras outras questões, o product owner ainda precisa (ou deveria) preocupar-se com outro investimento, não menos importante: a interface do software com o usuário.</p>
+      			<p><a class="post-more" ng-href="{{path}}/blog/um-suporte-no-design-do-meu-projeto">Leia mais <i class="fa fa-arrow-circle-right"></i></a></p>
+      		</div>
+        </div>
+        <div class="col-xs-12 col-sm-4 col-md-offset-1 post-column pull-right">
+        	<form name="contactForm" class="clearfix" ng-submit="sendMail()">
+        		<h4>Peça um orçamento e veja como tudo aqui é muito simples.</h4>
+
+        		<alert ng-repeat="alert in alerts" type="{{alert.type}}">{{alert.msg}}</alert>
+
+        		<div class="form-group">
+					<label class="sr-only" for="nome">Nome</label>
+					<input type="text" ng-model="formMail.Nome" class="form-control" id="nome" placeholder="Qual seu nome?">
+				</div>
+				<div class="form-group">
+					<label class="sr-only" for="email">Email</label>
+					<input type="email" ng-model="formMail.Email" class="form-control" id="email" placeholder="Seu e-mail">
+				</div>
+				<div class="form-group">
+					<label class="sr-only" for="msg">Descreva seu produto</label>
+					<textarea ng-model="formMail.Mensagem" class="form-control" id="msg" rows="6" placeholder="Descreva rapidamente seu produto"></textarea>
+				</div>
+				<input type="submit" class="btn btn-primary pull-right" value="Enviar">
+        	</form>
+        </div>
+      </div>
+    </div>
+</div>

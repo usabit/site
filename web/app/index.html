@@ -5,6 +5,8 @@
     <meta charset="utf-8">
     <title>Usabit - Projetos Digitais</title>
 
+    <base href="/">
+
     <meta name="description" content="Uma equipe dinâmica que desenvolve de forma ágil, sem invenções ou burocracias. Nosso método é formado de profissionais experientes, excelente entendimento de escopo, prototipagem rápida, validações, design colaborativo e testes de melhoria contínua.">
     <meta name="keywords" content="usabit, desenvolvimento de software, design, ti, site, portal, app, aplicativo, projetos, projetos digitais, consultoria, html, treinamento, user experience, marketing, front-end, tecnologia, software, método agil, scrum, cms, design responsivo"> 
     <meta name="author" content="Usabit"> 
@@ -33,7 +35,7 @@
         <div class="container-fluid">
             <div class="row row-links">
                 <div class="col-xs-12 col-sm-3 col-logo">
-                    <a href="#/"><img src="images/marca-usabit-projetos-digitais.png" alt="Usabit - Projetos Digitais"></a>
+                    <a href="{{path}}/"><img src="images/marca-usabit-projetos-digitais.png" alt="Usabit - Projetos Digitais"></a>
                 </div>
                 <!--<div class="col-xs-12 col-sm-3">
                     <ul>
@@ -47,18 +49,18 @@
                 </div>-->
                 <div class="col-xs-12 col-sm-3">
                     <ul>
-                        <li class="first-link"><a href="">Sobre Nós</a></li>
-                        <li><a href="#/team">Meet the #Team</a></li>
-                        <li><a href="#/cases">Tudo que fazemos</a></li>
-                        <li><a href="#/contato">Contato</a></li>
+                        <li class="first-link"><a href="javascript:void(0)">Sobre Nós</a></li>
+                        <li><a ng-href="{{path}}/team">Meet the #Team</a></li>
+                        <li><a ng-href="{{path}}/cases">Tudo que fazemos</a></li>
+                        <li><a href="{{path}}/contato">Contato</a></li>
                     </ul>
                 </div>
                 <div class="col-xs-12 col-sm-3">
                     <ul>
                         <li class="first-link"><a href="http://www.usabit.com.br/blog/">Blog</a></li>
-                        <li><a href="http://www.usabit.com.br/blog/uma-consultoria-de-desenvolvimento-de-software/">Consultoria no desenvolvimento de software</a></li>
-                        <li><a href="http://www.usabit.com.br/blog/aumente-a-qualidade-da-sua-equipe-de-desenvolvimento/">Aumente a qualidade da sua equipe de desenvolvimento</a></li>
-                        <li><a href="http://www.usabit.com.br/blog/um-suporte-no-design-do-meu-projeto/">Um suporte no design do meu projeto</a></li>
+                        <li><a href="{{path}}/blog/uma-consultoria-de-desenvolvimento-de-software/">Consultoria no desenvolvimento de software</a></li>
+                        <li><a href="{{path}}/blog/aumente-a-qualidade-da-sua-equipe/">Aumente a qualidade da sua equipe de desenvolvimento</a></li>
+                        <li><a href="{{path}}/blog/um-suporte-no-design-do-meu-projeto/">Um suporte no design do meu projeto</a></li>
                     </ul>
                 </div>
             </div>
@@ -160,7 +162,11 @@
     <script src="scripts/controllers/post.js"></script>
     <script src="scripts/services/contatoservice.js"></script>
     <script src="scripts/directives/owlcarousel.js"></script>
+    <script src="scripts/controllers/nosso-jeito.js"></script>
+    <script src="scripts/controllers/blog.js"></script>
     <!-- endbuild -->
+
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-55ad5d806d16c5ad" async="async"></script>
 </body>
 
 </html>

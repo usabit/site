@@ -21,7 +21,7 @@ angular
     'angulartics', 
     'angulartics.google.analytics'
   ])
-  .config(function ($routeProvider) {
+  .config(function ($routeProvider, $locationProvider) {
     $routeProvider
       .when('/', {
         templateUrl: 'views/main.html',
@@ -48,18 +48,39 @@ angular
         templateUrl: 'views/cases.html',
         controller: 'CasesCtrl'
       })
-      .when('/:postName', {
+      .when('/blog', {
+        templateUrl: 'views/blog.html',
+        controller: 'BlogCtrl'
+      })
+      .when('/blog/:postName', {
         templateUrl: 'views/post.html',
         controller: 'PostCtrl'
+      })
+      .when('/nosso-jeito', {
+        templateUrl: 'views/nosso-jeito.html',
+        controller: 'NossoJeitoCtrl'
       })
       .otherwise({
         redirectTo: '/'
       });
+
+      if (window.document.URL.indexOf('http://127.0.0.1') === 0 || window.document.URL.indexOf('http://localhost') === 0) {
+        
+      } else {
+        $locationProvider.html5Mode(true);
+      }
+
   }).run(['$rootScope', '$location',
     function($rootScope, $location) {
       $rootScope.$on('$routeChangeStart', function(event, current) {
         $rootScope.currentController = current.controller;
         $rootScope.inaugurationOpened = false;
+
+        if (window.document.URL.indexOf('http://127.0.0.1') === 0 || window.document.URL.indexOf('http://localhost') === 0) {
+          $rootScope.path = '/#';
+        } else {
+          $rootScope.path = '';
+        }
 
 
         // Determina qual item do menu deve estar ativo.
