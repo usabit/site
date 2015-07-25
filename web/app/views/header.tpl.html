@@ -46,31 +46,36 @@
             </div>
         </div>
     </div>-->
-
-    <div class="container-fluid">
-        <div class="row row-top-header">
-            <div class="col-xs-6">
-                <a class="btn btn-link" href="tel:552141012259"><i class="fa fa-lg fa-phone-square"></i> 21 4101-2259</a>
-            </div>
-            <div class="col-xs-6 text-right">
-                <a class="btn btn-link" href="{{path}}/blog">Blog</a>
+    <div class="top-header">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-6">
+                    <a class="btn btn-link" href="tel:552141012259"><i class="fa fa-lg fa-phone-square"></i> 21 4101-2259</a>
+                </div>
+                <div class="col-xs-6 text-right">
+                    <a class="btn btn-link" href="{{path}}/blog">Blog</a>
+                </div>
             </div>
         </div>
     </div>
 
     <div class="container-fluid">            
         <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mainMenu">
+          <!--<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mainMenu">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
+          </button>-->
+          <button type="button" data-toggle="collapse" data-target="#mainMenu" class="navbar-toggle c-hamburger c-hamburger--htx" ng-mousedown="mobileMenuActive = !mobileMenuActive" ng-class="{'is-active': mobileMenuActive}">
+            <span>Menu</span>
           </button>
           <a class="navbar-brand" href="{{path}}/"><img src="images/marca-usabit-projetos-digitais.png" alt="Usabit - Projetos Digitais"></a>
         </div>
 
         <div class="collapse navbar-collapse" id="mainMenu">
-            <ul class="nav navbar-nav">
+            <ul class="nav navbar-nav navbar-main-menu">
+                <li class="hidden-sm hidden-md hidden-lg" ng-class="{active:isActive('')}"><a ng-href="{{path}}/">Home</a></li>
                 <li ng-class="{active:isActive('team')}"><a ng-href="{{path}}/team">team</a></li>
                 <li ng-class="{active:isActive('nosso-jeito')}"><a ng-href="{{path}}/nosso-jeito">nosso jeito</a></li>
                 <!--<li><a ng-href="#/cases">cases</a></li>-->
