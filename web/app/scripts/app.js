@@ -25,19 +25,18 @@ angular
     $routeProvider
       .when('/', {
         templateUrl: 'views/main.html',
-        controller: 'MainCtrl'
-      })
-      .when('/about', {
-        templateUrl: 'views/about.html',
-        controller: 'AboutCtrl'
+        controller: 'MainCtrl',
+        title: 'Página inicial'
       })
       .when('/contato', {
         templateUrl: 'views/contato.html',
-        controller: 'ContatoCtrl'
+        controller: 'ContatoCtrl',
+        title: 'Contato'
       })
       .when('/team', {
         templateUrl: 'views/team.html',
-        controller: 'TeamCtrl'
+        controller: 'TeamCtrl',
+        title: 'Nosso time'
       })
       .when('/contato/form/:type', {
         //templateUrl: 'views/contato/form.html',
@@ -46,11 +45,13 @@ angular
       })
       .when('/cases', {
         templateUrl: 'views/cases.html',
-        controller: 'CasesCtrl'
+        controller: 'CasesCtrl',
+        title: 'Nossos cases'
       })
       .when('/blog', {
         templateUrl: 'views/blog.html',
-        controller: 'BlogCtrl'
+        controller: 'BlogCtrl',
+        title: 'Blog'
       })
       .when('/blog/:postName', {
         templateUrl: 'views/post.html',
@@ -58,7 +59,8 @@ angular
       })
       .when('/nosso-jeito', {
         templateUrl: 'views/nosso-jeito.html',
-        controller: 'NossoJeitoCtrl'
+        controller: 'NossoJeitoCtrl',
+        title: 'Nosso jeito'
       })
       .otherwise({
         redirectTo: '/'
@@ -74,6 +76,7 @@ angular
     function($rootScope, $location) {
       $rootScope.$on('$routeChangeStart', function(event, current) {
         $rootScope.currentController = current.controller;
+        $rootScope.currentTitle = current.title;
         $rootScope.inaugurationOpened = false;
 
         if (window.document.URL.indexOf('http://127.0.0.1') === 0 || window.document.URL.indexOf('http://localhost') === 0) {

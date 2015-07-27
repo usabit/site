@@ -1,11 +1,14 @@
 <!doctype html>
-<html class="no-js">
+<html ng-app="usabitApp" class="no-js">
 
 <head>
     <meta charset="utf-8">
-    <title>Usabit - Projetos Digitais</title>
+    <title ng-bind="currentTitle + ' | Usabit Projetos Digitais'"></title>
 
     <base href="/">
+    <meta name="theme-color" content="#2d4453">
+    <meta name="robots" content="index,follow">
+    <meta http-equiv="content-language" content="pt-br" />
 
     <meta name="description" content="Uma equipe dinâmica que desenvolve de forma ágil, sem invenções ou burocracias. Nosso método é formado de profissionais experientes, excelente entendimento de escopo, prototipagem rápida, validações, design colaborativo e testes de melhoria contínua.">
     <meta name="keywords" content="usabit, desenvolvimento de software, design, ti, site, portal, app, aplicativo, projetos, projetos digitais, consultoria, html, treinamento, user experience, marketing, front-end, tecnologia, software, método agil, scrum, cms, design responsivo"> 
@@ -25,7 +28,7 @@
     <!-- endbuild -->
 </head>
 
-<body ng-app="usabitApp" ng-class="{inauguration: inaugurationOpened}" class="{{currentController}}">
+<body ng-class="{inauguration: inaugurationOpened}" class="{{currentController}}">
     <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
