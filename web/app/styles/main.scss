@@ -346,9 +346,20 @@ body {
         color: #6cf3a8;
       }
 
-      &:hover {
+      &:hover,
+      &:focus {
         text-decoration: none;
         color: darken(#ffffff, 5%);
+      }
+    }
+
+    .btn-language {
+      margin-left: 15px;
+      color: rgba(255, 255, 255, 0.5);
+
+      &:hover,
+      &:focus {
+        color: rgba(255, 255, 255, 0.7);
       }
     }
   }
@@ -1057,12 +1068,19 @@ body {
 
   select {
     font-size: 1.50em;
-    color: #fff;
+    color: #000;
     border: 2px solid #c9c9c9;
-    background: none; 
+    background: #d9d9d9; 
     height: 51px;
     vertical-align: middle;
     margin: 0 10px;
+
+    @media (max-width: 767px) {
+      box-sizing: border-box;
+      display: block;
+      margin: 0 0 10px;
+      width: 100%;
+    }
   }
 
   .btn {
@@ -1174,7 +1192,7 @@ body {
         width: 80%;
       }
 
-      span {
+      .like {
         width: 25%;
         right: -35%;
         display: block;
@@ -1209,7 +1227,7 @@ body {
 
 
       &:first-child {
-        span {
+        .like {
           &:before {
             position: absolute;
             content: "";
@@ -1317,7 +1335,7 @@ body {
         }
       }
 
-      @media (max-width: 329px) {
+      @media (max-width: 380px) {
         margin: 0 0 0 5px;
       }
 
@@ -1670,6 +1688,7 @@ body {
     img {
       margin: 0 auto;
       display: block;
+      max-width: 100%;
     }
     p {
       color: #232323;
@@ -1745,7 +1764,7 @@ body {
           border-left: 30px solid transparent;
           border-right: 30px solid transparent;
           border-top: 25px solid #fff;
-          top: -40px;
+          top: -41px;
           left: -10px;
         }
       }

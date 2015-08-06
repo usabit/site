@@ -1,0 +1,62 @@
+﻿{
+    "HEADER": {
+        "CHANGE_LANG_TO": "Versão em Português",
+        "MENU_HOME": "Home",
+        "MENU_CONTACT": "Contact",
+        "MENU_TEAM": "Team",
+        "MENU_WAY": "Our way",
+        "MENU_BLOG": "Blog"
+    },
+
+    "FOOTER": {
+        "PHONE": "Phone",
+        "ZIPCODE": "Zipcode",
+        "NOTE": "All content on this site is made up of free information. We hope you copy, be inspired, replicate, play, share with all freedom you want. Long live the internet and open content!",
+        "MENU_ABOUT_US": "About us",
+        "MENU_HOME": "Home",
+        "MENU_CONTACT": "Contact",
+        "MENU_TEAM": "Team",
+        "MENU_WAY": "Our way",
+        "MENU_BLOG": "Blog"
+    },
+
+
+    
+
+    "HOME": {
+        "BANNERS": {
+            "01_TITLE": "Try to work with a smart and effective senior team!",
+            "01_TEXT": "Usabit is a development team that creates for web. We make digital products and services that truly work. Sites, Apps and anything else.",
+            "01_CALLTO": "We have major plans, learn more",
+            "02_TITLE": "To gain speed in the auctions you participate, ask our ninjas.",
+            "02_TEXT": "Usabit is a development team that creates for web. We make digital products and services that truly work. Sites, Apps and anything else.",
+            "02_CALLTO": "Meet the exclusive spidy site"
+        },
+        "WHAT_YOU_NEED": {
+            "TITLE": "What do you need?",
+            "COMBO_NEW_PROJECT": "a new project",
+            "COMBO_SUPPORT": "a support",  
+            "SUBMIT_BTN": "Let\"s start"
+        },
+        "YOUR_GOALS": {
+            "TITLE": "Usabit helps to hit your goals",
+            "GOAL_01": "Reach more online customers",
+            "GOAL_02": "Be more efficient optimizing processes",
+            "GOAL_03": "Make better decisions through management data",
+            "GOAL_04": "Get big ideas off the drawing board"
+        },
+        "BENEFITS": {
+            "TITLE": "Immediate advantages to work with us",
+            "BENEFIT_01": "Senior profiles that solve problems quickly",
+            "BENEFIT_02": "Experience with small and large projects",
+            "BENEFIT_03": "High quality in all deliveries",
+            "BENEFIT_04": "Care with pixel-perfect Design and Front-end",
+            "BENEFIT_05": "Mobile even first: no screen size limit",
+            "BENEFIT_06": "Reports and total visibility of work progress"
+        },
+        "FIND_US": {
+            "TITLE": "You can find us here:"
+        }
+    }
+
+}

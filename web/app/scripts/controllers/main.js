@@ -8,60 +8,78 @@
  * Controller of the usabitApp
  */
 angular.module('usabitApp')
-  .controller('MainCtrl', function ($scope, $rootScope, $location) {
-  	$scope.selectedComboType = { selected: { value: '2', label: 'um projeto novo'} };
+  .controller('MainCtrl', function ($scope, $rootScope, $location, $translate) {
 
-    $scope.selectedComboSuporte = { selected: { value: '1-3', label: 'no design do meu projeto'} };
-    $scope.selectedComboProjeto =  { selected: {value: '2-1', label: 'de um site'} };
-    $scope.selectedComboTreinamento = { selected: { value: '3-1', label: 'para aumentar a qualidade da minha equipe de TI'} };
-    $rootScope.selectedComboConsultoria = { selected: { value: '4-3', label: 'de desenvolvimento de software'} };
-    
+    $scope.translateControl = function() {
+      $translate([
+        'HOME.WHAT_YOU_NEED.COMBO_NEW_PROJECT',
+        'HOME.WHAT_YOU_NEED.COMBO_SUPPORT',
+        ]).then(function (translations) {
+        $scope.comboTypeProject = translations['HOME.WHAT_YOU_NEED.COMBO_NEW_PROJECT'];
+        $scope.comboTypeSupport = translations['HOME.WHAT_YOU_NEED.COMBO_SUPPORT'];
+        $scope.comboTypeTraining = translations['NAMESPACE.PARAGRAPH'];
+      });
+    };
+    $scope.translateControl();
+
+    $rootScope.$on('$translateChangeSuccess', function () {
+      $scope.translateControl();
+    });
+
+
   	$scope.comboType = [
   		{ value: '1', label: 'um suporte'},
   		{ value: '2', label: 'um projeto novo'},
   		{ value: '3', label: 'um treinamento'},
   		{ value: '4', label: 'uma consultoria'}
   	];
+    $scope.selectedComboType = $scope.comboType[1];
 
-  	$scope.comboProjeto = [
-  		{ value: '2-1', label: 'de um site'},
-  		{ value: '2-2', label: 'de um sistema'},
-  		{ value: '2-3', label: 'de um app'},
-  		//{ value: '2-4', label: 'de design e pesquisa com usuários'}
-  	];
+    
 
-  	$scope.comboSuporte = [
-  		//{ value: '1-1', label: 'para minha equipe de TI'},
-  		{ value: '1-2', label: 'no desenvolvimento de htmls'},
-  		{ value: '1-3', label: 'no design do meu projeto'},
-  		//{ value: '1-4', label: 'de Marketing'}
-  	];
+    $scope.comboProjeto = [
+      { value: '2-1', label: 'de um site'},
+      { value: '2-2', label: 'de um sistema'},
+      { value: '2-3', label: 'de um app'},
+      //{ value: '2-4', label: 'de design e pesquisa com usuários'}
+    ];
+    $scope.selectedComboProjeto =  $scope.comboProjeto[0];
 
-  	$scope.comboTreinamento = [
-  		{ value: '3-1', label: 'para aumentar a qualidade da minha equipe de TI'},
-  		//{ value: '3-2', label: 'de como manter minha empresa relevante no Google'},
-  		//{ value: '3-3', label: 'de como manter minhas redes sociais'}
-  	];
+    $scope.comboSuporte = [
+      //{ value: '1-1', label: 'para minha equipe de TI'},
+      { value: '1-2', label: 'no desenvolvimento de htmls'},
+      { value: '1-3', label: 'no design do meu projeto'},
+      //{ value: '1-4', label: 'de Marketing'}
+    ];
+    $scope.selectedComboSuporte = $scope.comboSuporte[1];
 
-  	$scope.comboConsultoria = [
-  		//{ value: '4-1', label: 'de UX (User Experience)'},
-  		//{ value: '4-2', label: 'de marketing online'},
-  		{ value: '4-3', label: 'de desenvolvimento de software'},
-  		//{ value: '4-4', label: 'de minificação de códigos'}
-  	];
+    $scope.comboTreinamento = [
+      { value: '3-1', label: 'para aumentar a qualidade da minha equipe de TI'},
+      //{ value: '3-2', label: 'de como manter minha empresa relevante no Google'},
+      //{ value: '3-3', label: 'de como manter minhas redes sociais'}
+    ];
+    $scope.selectedComboTreinamento = $scope.comboTreinamento[0];
 
-  	$scope.$watch('selectedComboType.selected', function() {
-      console.log($scope.selectedComboType.selected);
+    $scope.comboConsultoria = [
+      //{ value: '4-1', label: 'de UX (User Experience)'},
+      //{ value: '4-2', label: 'de marketing online'},
+      { value: '4-3', label: 'de desenvolvimento de software'},
+      //{ value: '4-4', label: 'de minificação de códigos'}
+    ];
+    $scope.selectedComboConsultoria = $scope.comboConsultoria[0];
 
-      if ($scope.selectedComboType.selected.value === '1') {
-        //console.log('> 1')
+  	$scope.$watch('selectedComboType', function() {
+      //console.log($scope.selectedComboType);
+
+      if ($scope.selectedComboType.value === '1') {
+        //console.log('> 1');
         $scope.isOption1 = true;
         $scope.isOption2 = false; $scope.isOption3 = false; $scope.isOption4 = false;
-      } else if ($scope.selectedComboType.selected.value === '2') {
+      } else if ($scope.selectedComboType.value === '2') {
         //console.log('> 2');
         $scope.isOption2 = true;
         $scope.isOption1 = false; $scope.isOption3 = false; $scope.isOption4 = false;
-      } else if ($scope.selectedComboType.selected.value === '3') {
+      } else if ($scope.selectedComboType.value === '3') {
         //console.log('> 3');
         $scope.isOption3 = true;
         $scope.isOption2 = false; $scope.isOption1 = false; $scope.isOption4 = false;
@@ -73,9 +91,9 @@ angular.module('usabitApp')
     });
 
     $scope.submit = function() {
-      switch ($scope.selectedComboType.selected.value) {
+      switch ($scope.selectedComboType.value) {
         case '1':
-          switch ($scope.selectedComboSuporte.selected.value) {
+          switch ($scope.selectedComboSuporte.value) {
             case '1-1':
               window.location.href = '/blog/um-suporte-para-minha-equipe-de-ti';
               break;
@@ -91,7 +109,7 @@ angular.module('usabitApp')
           }
           break;
         case '2':
-          switch ($scope.selectedComboProjeto.selected.value) {
+          switch ($scope.selectedComboProjeto.value) {
             case '2-1':
               $location.path('/blog/dez-motivos-para-contratar-nosso-time');
               break;
@@ -107,7 +125,7 @@ angular.module('usabitApp')
           }
           break;
         case '3':
-          switch ($scope.selectedComboTreinamento.selected.value) {
+          switch ($scope.selectedComboTreinamento.value) {
             case '3-1':
               $location.path('/blog/aumente-a-qualidade-da-sua-equipe');
               break;
@@ -120,7 +138,7 @@ angular.module('usabitApp')
           }
           break;
         case '4':
-          switch ($scope.selectedComboConsultoria.selected.value) {
+          switch ($scope.selectedComboConsultoria.value) {
             case '4-1':
               window.location.href = '/blog/uma-consultoria-de-ux';
               break;
@@ -139,29 +157,14 @@ angular.module('usabitApp')
       //console.log($scope.selectedComboSuporte, $scope.selectedComboProjeto, $scope.selectedComboTreinamento, $scope.selectedComboConsultoria);
     };
 
-
     // OWL CAROUSEL
     // ===================================================================
-    $scope.owlItens = [{
-            className: 'carousel-01',
-            title: 'Experimente trabalhar com uma equipe de desenvolvimento de software simples e eficiente.',
-            text: 'Aqui na usabit não filosofamos nem reinventamos a roda. Nós somos um pequeno escritório que desenha softwares com perfeição. Em todos os aspectos.',
-            callToAction: 'Mas temos grandes planos, quer saber?',
-            url: $rootScope.path + '/blog'
-        }, {
-            className: 'carousel-02',
-            title: 'Para ganhar velocidade nos leilões que você participa, peça ajuda aos nossos ninjas.',
-            text: 'Com o Spidy.Ninja, cadastre dezenas, centenas ou milhares de produtos de forma eficiente, reduzindo erros e em menos da metade do tempo.',
-            callToAction: 'Conheça o site exclusivo do Spidy',
-            url: 'http://spidy.ninja/'
-        }];
-
-        $scope.owlOptions = {
-            items: 1, //10 items above 1000px browser width
-            itemsDesktop: [1199,1],
-            itemsDesktopSmall: [979,1],
-            itemsTablet:[768, 1],
-            pagination: false,
-            autoPlay: 10000
-        };
+    $scope.owlOptions = {
+        items: 1, //10 items above 1000px browser width
+        itemsDesktop: [1199,1],
+        itemsDesktopSmall: [979,1],
+        itemsTablet:[768, 1],
+        pagination: false,
+        autoPlay: 10000
+    };
   });

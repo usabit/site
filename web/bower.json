@@ -17,7 +17,10 @@
     "selectize": "~0.8.5",
     "angulartics": "~0.17.2",
     "angular-bootstrap": "~0.13.0",
-    "angular-owlcarousel": "https://bitbucket.org/qx3/angular-owlcarousel"
+    "angular-owlcarousel": "https://bitbucket.org/qx3/angular-owlcarousel",
+    "angular-translate": "~2.7.2",
+    "angular-translate-loader-static-files": "~2.7.2",
+    "angular-translate-storage-cookie": "~2.7.2"
   },
   "devDependencies": {
     "angular-mocks": "~1.3.0",

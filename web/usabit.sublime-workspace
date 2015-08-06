@@ -4,6 +4,22 @@
 		"selected_items":
 		[
 			[
+				"ng-bind",
+				"ng-bind-html	AngularJS"
+			],
+			[
+				"$root",
+				"$rootScope	AngularJS"
+			],
+			[
+				"ng-mouse",
+				"ng-mousedown	AngularJS"
+			],
+			[
+				"backgro",
+				"background-color"
+			],
+			[
 				"backgo",
 				"background-position"
 			],
@@ -52,20 +68,12 @@
 				"font-family"
 			],
 			[
-				"backgro",
-				"background-size"
-			],
-			[
 				"border-lef",
 				"border-left-color"
 			],
 			[
 				"box",
 				"box-sizing"
-			],
-			[
-				"ng-mouse",
-				"ng-mouseleave	AngularJS"
 			],
 			[
 				"cpfCnpj",
@@ -340,50 +348,26 @@
 	"buffers":
 	[
 		{
-			"file": "app/index.html",
-			"settings":
-			{
-				"buffer_size": 9975,
-				"line_ending": "Unix"
-			}
-		},
-		{
 			"file": "app/scripts/app.js",
 			"settings":
 			{
-				"buffer_size": 2842,
+				"buffer_size": 3459,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "bower.json",
+			"file": "app/scripts/controllers/main.js",
 			"settings":
 			{
-				"buffer_size": 726,
+				"buffer_size": 6096,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "app/.htaccess",
+			"file": "app/styles/main.scss",
 			"settings":
 			{
-				"buffer_size": 24362,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/views/header.tpl.html",
-			"settings":
-			{
-				"buffer_size": 5068,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/views/nosso-jeito.html",
-			"settings":
-			{
-				"buffer_size": 1853,
+				"buffer_size": 36538,
 				"line_ending": "Unix"
 			}
 		},
@@ -396,26 +380,18 @@
 			}
 		},
 		{
-			"file": "app/views/blog.html",
-			"settings":
-			{
-				"buffer_size": 4124,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/styles/main.scss",
-			"settings":
-			{
-				"buffer_size": 32352,
-				"line_ending": "Unix"
-			}
-		},
-		{
 			"file": "app/views/main.html",
 			"settings":
 			{
-				"buffer_size": 10439,
+				"buffer_size": 13750,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/index.html",
+			"settings":
+			{
+				"buffer_size": 10110,
 				"line_ending": "Unix"
 			}
 		}
@@ -548,29 +524,38 @@
 		"/Users/rodrigolemos/Git/usabit/site/web",
 		"/Users/rodrigolemos/Git/usabit/site/web/app",
 		"/Users/rodrigolemos/Git/usabit/site/web/app/scripts",
-		"/Users/rodrigolemos/Git/usabit/site/web/app/scripts/controllers"
+		"/Users/rodrigolemos/Git/usabit/site/web/app/scripts/controllers",
+		"/Users/rodrigolemos/Git/usabit/site/web/app/scripts/languages",
+		"/Users/rodrigolemos/Git/usabit/site/web/app/styles",
+		"/Users/rodrigolemos/Git/usabit/site/web/app/views"
 	],
 	"file_history":
 	[
+		"/Users/rodrigolemos/Git/usabit/site/web/app/views/header.tpl.html",
+		"/Users/rodrigolemos/Git/usabit/site/web/bower.json",
+		"/Users/rodrigolemos/Git/usabit/site/web/app/scripts/languages/en.json",
+		"/Users/rodrigolemos/Git/usabit/site/web/app/scripts/languages/pt-br.json",
 		"/Users/rodrigolemos/Git/usabit/site/web/app/styles/main.scss",
-		"/Users/rodrigolemos/Git/usabit/site/web/app/views/post.html",
-		"/Users/rodrigolemos/Git/usabit/site/web/app/views/posts/uma-consultoria-de-desenvolvimento-de-software.html",
+		"/Users/rodrigolemos/Git/usabit/site/web/bower_components/fontawesome/.bower.json",
 		"/Users/rodrigolemos/Git/usabit/site/web/app/scripts/controllers/main.js",
+		"/Users/rodrigolemos/Git/usabit/site/web/app/views/nosso-jeito.html",
+		"/Users/rodrigolemos/Git/usabit/site/web/app/index.html",
+		"/Users/rodrigolemos/Git/usabit/site/web/app/scripts/app.js",
+		"/Users/rodrigolemos/Git/usabit/site/web/app/views/posts/dez-motivos-para-contratar-nosso-time.html",
 		"/Users/rodrigolemos/Git/usabit/site/web/app/views/posts/aumente-a-qualidade-da-sua-equipe.html",
-		"/Users/rodrigolemos/Git/usabit/site/web/app/views/posts/um-suporte-no-design-do-meu-projeto.html",
 		"/Users/rodrigolemos/Git/usabit/site/web/app/views/posts/um-suporte-no-desenvolvimento-de-htmls.html",
+		"/Users/rodrigolemos/Git/usabit/site/web/app/views/posts/um-suporte-no-design-do-meu-projeto.html",
+		"/Users/rodrigolemos/Git/usabit/site/web/app/views/posts/uma-consultoria-de-desenvolvimento-de-software.html",
+		"/Users/rodrigolemos/Git/usabit/site/web/app/.htaccess",
+		"/Users/rodrigolemos/Git/usabit/site/web/app/views/main.html",
+		"/Users/rodrigolemos/Git/usabit/site/web/app/views/blog.html",
+		"/Users/rodrigolemos/Git/usabit/site/web/app/views/team.html",
+		"/Users/rodrigolemos/Git/usabit/site/web/app/views/post.html",
 		"/Users/rodrigolemos/Git/usabit/site/web/package.json",
 		"/Users/rodrigolemos/Git/usabit/site/web/Gruntfile.js",
-		"/Users/rodrigolemos/Git/usabit/site/web/app/scripts/app.js",
-		"/Users/rodrigolemos/Git/usabit/site/web/app/views/team.html",
-		"/Users/rodrigolemos/Git/usabit/site/web/app/views/main.html",
 		"/Users/rodrigolemos/Git/usabit/site/web/app/views/contato.html",
-		"/Users/rodrigolemos/Git/usabit/site/web/app/views/header.tpl.html",
-		"/Users/rodrigolemos/Git/usabit/site/web/app/views/posts/dez-motivos-para-contratar-nosso-time.html",
 		"/Users/rodrigolemos/Git/usabit/site/web/.gitignore",
-		"/Users/rodrigolemos/Git/usabit/site/web/bower.json",
 		"/Users/rodrigolemos/Git/usabit/site/web/app/scripts/directives/owlcarousel.js",
-		"/Users/rodrigolemos/Git/usabit/site/web/app/index.html",
 		"/Users/rodrigolemos/Git/usabit/site/web/app/scripts/controllers/post.js",
 		"/Users/rodrigolemos/Git/usabit/site/web/app/views/cases.html",
 		"/Users/rodrigolemos/Git/usabit/site/web/app/scripts/services/contatoservice.js",
@@ -673,13 +658,7 @@
 		"/Volumes/C/srvtfs/CETIP Portal Extrato/trunk/web/bower_components/angular-moment/README.md",
 		"/Volumes/C/srvtfs/CETIP Portal Extrato/trunk/web/app/scripts/controllers/primeiro-acesso.js",
 		"/Volumes/C/srvtfs/CETIP Portal Extrato/trunk/web/app/scripts/controllers/esqueci-senha.js",
-		"/Volumes/C/srvtfs/CETIP Portal Extrato/trunk/web/app/views/relatar-problemas.html",
-		"/Volumes/C/srvtfs/CETIP Portal Extrato/trunk/web/app/scripts/controllers/relatar-problemas.js",
-		"/Volumes/C/srvtfs/CETIP Portal Extrato/trunk/web/app/scripts/factories/session.js",
-		"/Volumes/C/srvtfs/CETIP Portal Extrato/trunk/web/app/favicon.ico",
-		"/Volumes/C/srvtfs/M2M_Copiloto/trunk/web/app/scripts/app.js",
-		"/Volumes/C/srvtfs/M2M_Copiloto/trunk/web/app/styles/main.scss",
-		"/Volumes/C/srvtfs/M2M_Copiloto/trunk/web/app/scripts/services/macaddressservice.js"
+		"/Volumes/C/srvtfs/CETIP Portal Extrato/trunk/web/app/views/relatar-problemas.html"
 	],
 	"find":
 	{
@@ -698,6 +677,21 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"$scope.comboTypeSupport",
+			"COMBO_NEW_PROJECT",
+			"WHAT_YOU_NEED",
+			"like",
+			"HOME.BENEFITS",
+			"</li>",
+			"<li>",
+			"HOME.YOUR_GOALS.GOAL_",
+			"HOME.YOUR_GOALS.GOAL_01",
+			"BANNER",
+			"TITLE",
+			"    ",
+			"'",
+			"329",
+			"255",
 			"{{path}}/",
 			"url",
 			"rew",
@@ -810,22 +804,7 @@
 			".experts ",
 			".experts > div ",
 			".pagina-oquefazemos ",
-			"o-que-fazemos",
-			".pagina-oquefazemos ",
-			".content-servicos ",
-			"pagina-porqueaqx3",
-			"scope",
-			"\"",
-			"rowLancamentos",
-			"rowTermo",
-			"rowOpcao",
-			" | currency: &quot;&quot;",
-			" | date: &#39;dd/MM/yyyy&#39;",
-			"| date: &#39;dd/MM/yyyy&#39;",
-			">\n",
-			"rowSwap",
-			"rowRendaFixa.",
-			"extract.cabecalho"
+			"o-que-fazemos"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -883,49 +862,19 @@
 			[
 				{
 					"buffer": 0,
-					"file": "app/index.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 9975,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2017,
-								2017
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 419.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
 					"file": "app/scripts/app.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2842,
+						"buffer_size": 3459,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								415,
+								415
 							]
 						],
 						"settings":
@@ -938,34 +887,64 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 3,
 					"type": "text"
 				},
 				{
-					"buffer": 2,
-					"file": "bower.json",
+					"buffer": 1,
+					"file": "app/scripts/controllers/main.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 726,
+						"buffer_size": 6096,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								256,
+								256
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JSON.tmLanguage",
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 3.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "app/styles/main.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 36538,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								33260,
+								33260
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 26037.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -973,94 +952,6 @@
 				},
 				{
 					"buffer": 3,
-					"file": "app/.htaccess",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 24362,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								9837,
-								9837
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Text/Plain text.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 2947.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 9,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "app/views/header.tpl.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 5068,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								4028,
-								4028
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 655.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 8,
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "app/views/nosso-jeito.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1853,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								967,
-								967
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 6,
 					"file": "app/views/team.html",
 					"semi_transient": false,
 					"settings":
@@ -1072,8 +963,8 @@
 						"selection":
 						[
 							[
-								414,
-								57
+								2000,
+								2000
 							]
 						],
 						"settings":
@@ -1083,85 +974,27 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 176.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
-					"buffer": 7,
-					"file": "app/views/blog.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 4124,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1077,
-								1077
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 91.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 6,
-					"type": "text"
-				},
-				{
-					"buffer": 8,
-					"file": "app/styles/main.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 32352,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								11654,
-								11654
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 4240.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 5,
-					"type": "text"
-				},
-				{
-					"buffer": 9,
+					"buffer": 4,
 					"file": "app/views/main.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 10439,
+						"buffer_size": 13750,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								7107,
-								7107
+								2932,
+								2932
 							]
 						],
 						"settings":
@@ -1171,10 +1004,40 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1533.0,
+						"translation.y": 574.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 7,
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "app/index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 10110,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3662,
+								3662
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 568.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
 					"type": "text"
 				}
 			]

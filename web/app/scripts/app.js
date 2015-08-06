@@ -19,9 +19,21 @@ angular
     'ui.select',
     'ui.bootstrap',
     'angulartics', 
-    'angulartics.google.analytics'
+    'angulartics.google.analytics',
+    'pascalprecht.translate'
   ])
-  .config(function ($routeProvider, $locationProvider) {
+  .config(function ($routeProvider, $locationProvider, $translateProvider) {
+
+    $translateProvider
+      .useStaticFilesLoader({
+        prefix: '/scripts/languages/',
+        suffix: '.json'
+      })
+      .useSanitizeValueStrategy('sanitize')
+      .preferredLanguage('pt-br')
+      .useCookieStorage();
+
+
     $routeProvider
       .when('/', {
         templateUrl: 'views/main.html',
@@ -66,14 +78,14 @@ angular
         redirectTo: '/'
       });
 
-      if (window.document.URL.indexOf('http://127.0.0.1') === 0 || window.document.URL.indexOf('http://localhost') === 0) {
-        
-      } else {
-        $locationProvider.html5Mode(true);
-      }
+    if (window.document.URL.indexOf('http://127.0.0.1') === 0 || window.document.URL.indexOf('http://localhost') === 0) {
+      
+    } else {
+      $locationProvider.html5Mode(true);
+    }
 
-  }).run(['$rootScope', '$location',
-    function($rootScope, $location) {
+  }).run(['$rootScope', '$location', '$translate',
+    function($rootScope, $location, $translate) {
       $rootScope.$on('$routeChangeStart', function(event, current) {
         $rootScope.currentController = current.controller;
         $rootScope.currentTitle = current.title;
@@ -85,6 +97,10 @@ angular
           $rootScope.path = '';
         }
 
+        // Define o idioma do sistema
+        $rootScope.toggleLang = function() {
+            $translate.use() === 'en'? $translate.use('pt-br') : $translate.use('en'); // jshint ignore:line
+        };
 
         // Determina qual item do menu deve estar ativo.
         $rootScope.isActive = function(route) {

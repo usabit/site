@@ -50,10 +50,11 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-xs-6">
-                    <a class="btn btn-link" href="tel:552141012259"><i class="fa fa-lg fa-phone-square"></i> 21 4101-2259</a>
+                    <a class="btn btn-link" href="tel:552141012259"><i class="fa fa-lg fa-phone-square"></i> +55 21 4101-2259</a>
                 </div>
                 <div class="col-xs-6 text-right">
-                    <a class="btn btn-link" href="{{path}}/blog">Blog</a>
+                    <a class="btn btn-link" href="{{path}}/blog" ng-bind-html="'HEADER.MENU_BLOG'|translate"></a>
+                    <!--<a class="btn btn-link btn-language" href="" ng-click="toggleLang()" ng-bind-html="'HEADER.CHANGE_LANG_TO'|translate"></a>-->
                 </div>
             </div>
         </div>
@@ -75,11 +76,11 @@
 
         <div class="collapse navbar-collapse" id="mainMenu">
             <ul class="nav navbar-nav navbar-main-menu">
-                <li class="hidden-sm hidden-md hidden-lg" ng-class="{active:isActive('')}"><a ng-href="{{path}}/">Home</a></li>
-                <li ng-class="{active:isActive('team')}"><a ng-href="{{path}}/team">team</a></li>
-                <li ng-class="{active:isActive('nosso-jeito')}"><a ng-href="{{path}}/nosso-jeito">nosso jeito</a></li>
+                <li class="hidden-sm hidden-md hidden-lg" ng-class="{active:isActive('')}"><a ng-href="{{path}}/" ng-bind-html="'HEADER.MENU_HOME'|translate"></a></li>
+                <li ng-class="{active:isActive('team')}"><a ng-href="{{path}}/team" ng-bind-html="'HEADER.MENU_TEAM'|translate"></a></li>
+                <li ng-class="{active:isActive('nosso-jeito')}"><a ng-href="{{path}}/nosso-jeito" ng-bind-html="'HEADER.MENU_WAY'|translate"></a></li>
                 <!--<li><a ng-href="#/cases">cases</a></li>-->
-                <li ng-class="{active:isActive('contato')}"><a ng-href="{{path}}/contato">contato</a></li>
+                <li ng-class="{active:isActive('contato')}"><a ng-href="{{path}}/contato" ng-bind-html="'HEADER.MENU_CONTACT'|translate"></a></li>
                 <!--<li ng-class="{active:isActive('blog')}"><a href="{{path}}/blog">blog</a></li>-->
             </ul>
             <div class="nav navbar-nav navbar-right nav-social-list">

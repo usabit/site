@@ -52,15 +52,15 @@
                 </div>-->
                 <div class="col-xs-12 col-sm-3">
                     <ul>
-                        <li class="first-link"><a href="javascript:void(0)">Sobre Nós</a></li>
-                        <li><a ng-href="{{path}}/team">Meet the #Team</a></li>
-                        <li><a ng-href="{{path}}/nosso-jeito">Nosso jeito</a></li>
-                        <li><a href="{{path}}/contato">Contato</a></li>
+                        <li class="first-link"><a href="" ng-bind-html="'FOOTER.MENU_ABOUT_US'|translate">Sobre Nós</a></li>
+                        <li><a ng-href="{{path}}/team" ng-bind-html="'FOOTER.MENU_TEAM'|translate">Meet the #Team</a></li>
+                        <li><a ng-href="{{path}}/nosso-jeito" ng-bind-html="'FOOTER.MENU_WAY'|translate">Nosso jeito</a></li>
+                        <li><a href="{{path}}/contato" ng-bind-html="'FOOTER.MENU_CONTACT'|translate">Contato</a></li>
                     </ul>
                 </div>
                 <div class="col-xs-12 col-sm-3">
                     <ul>
-                        <li class="first-link"><a href="http://www.usabit.com.br/blog/">Blog</a></li>
+                        <li class="first-link"><a href="http://www.usabit.com.br/blog/" ng-bind-html="'FOOTER.MENU_BLOG'|translate">Blog</a></li>
                         <li><a href="{{path}}/blog/uma-consultoria-de-desenvolvimento-de-software/">Consultoria no desenvolvimento de software</a></li>
                         <li><a href="{{path}}/blog/aumente-a-qualidade-da-sua-equipe/">Aumente a qualidade da sua equipe de desenvolvimento</a></li>
                         <li><a href="{{path}}/blog/um-suporte-no-design-do-meu-projeto/">Um suporte no design do meu projeto</a></li>
@@ -76,13 +76,13 @@
                     <address>
                         <strong>Rio de Janeiro</strong>
                         <br>
-                        Est. do Tindiba, 1.103/ Sala 409 - CEP 22740-361
+                        Est. do Tindiba, 1.103/ Sala 409 - <span ng-bind-html="'FOOTER.ZIPCODE'|translate"></span> 22740-361
                         <br>
-                        tel 21 4101-2259
+                        <span ng-bind-html="'FOOTER.PHONE'|translate"></span> +55 21 4101-2259
                     </address>
                 </div>
                 <div class="col-xs-12 col-sm-6 col-md-4 col-md-offset-2 text-right">
-                    <p>Todo o conteúdo deste site é formado de informações livres. Esperamos que você copie, se inspire, replique, reproduza, compartilhe com toda liberdade que quiser. Viva a internet e o conteúdo aberto!</p>
+                    <p ng-bind-html="'FOOTER.NOTE'|translate"></p>
                 </div>
             </div>
         </div>
@@ -147,6 +147,9 @@
     <script src="bower_components/angulartics/src/angulartics-marketo.js"></script>
     <script src="bower_components/angulartics/src/angulartics-intercom.js"></script>
     <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+    <script src="bower_components/angular-translate/angular-translate.js"></script>
+    <script src="bower_components/angular-translate-loader-static-files/angular-translate-loader-static-files.js"></script>
+    <script src="bower_components/angular-translate-storage-cookie/angular-translate-storage-cookie.js"></script>
     <!-- endbower -->
     <script type="text/javascript" src="http://www.skypeassets.com/i/scom/js/skype-uri.js"></script>
     <!-- endbuild -->

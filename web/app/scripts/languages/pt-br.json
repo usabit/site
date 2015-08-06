@@ -1,0 +1,59 @@
+﻿{
+    "HEADER": {
+        "CHANGE_LANG_TO": "English Version",
+        "MENU_HOME": "Página inicial",
+        "MENU_CONTACT": "Contato",
+        "MENU_TEAM": "Nosso time",
+        "MENU_WAY": "Nosso jeito",
+        "MENU_BLOG": "Blog"
+    },
+
+    "FOOTER": {
+        "PHONE": "Tel",
+        "ZIPCODE": "CEP",
+        "NOTE": "Todo o conteúdo deste site é formado de informações livres. Esperamos que você copie, se inspire, replique, reproduza, compartilhe com toda liberdade que quiser. Viva a internet e o conteúdo aberto!",
+        "MENU_ABOUT_US": "Sobre nós",
+        "MENU_HOME": "Página inicial",
+        "MENU_CONTACT": "Contato",
+        "MENU_TEAM": "Nosso time",
+        "MENU_WAY": "Nosso jeito",
+        "MENU_BLOG": "Blog"
+    },
+
+    "HOME": {
+        "BANNERS": {
+            "01_TITLE": "Experimente trabalhar com uma equipe de desenvolvimento de software simples e eficiente.",
+            "01_TEXT": "Aqui na usabit não filosofamos nem reinventamos a roda. Nós somos um pequeno escritório que desenha softwares com perfeição. Em todos os aspectos.",
+            "01_CALLTO": "Mas temos grandes planos, quer saber?",
+            "02_TITLE": "Para ganhar velocidade nos leilões que você participa, peça ajuda aos nossos ninjas.",
+            "02_TEXT": "Com o Spidy.Ninja, cadastre dezenas, centenas ou milhares de produtos de forma eficiente, reduzindo erros e em menos da metade do tempo.",
+            "02_CALLTO": "Conheça o site exclusivo do Spidy?"
+        },
+        "WHAT_YOU_NEED": {
+            "TITLE": "Do que você precisa?",
+            "COMBO_NEW_PROJECT": "um projeto novo",
+            "COMBO_SUPPORT": "um suporte",
+            "SUBMIT_BTN": "Começar"
+        },
+        "YOUR_GOALS": {
+            "TITLE": "A Usabit ajuda a alcançar seus objetivos",
+            "GOAL_01": "Alcançar mais clientes online",
+            "GOAL_02": "Ser mais eficiente otimizando processos",
+            "GOAL_03": "Tomar decisões melhores através de dados gerenciais",
+            "GOAL_04": "Tirar grandes ideias de negócio do papel"
+        },
+        "BENEFITS": {
+            "TITLE": "Um tanto de vantagens imediatas ;)",
+            "BENEFIT_01": "Perfis Senior que solucionam problemas de forma rápida",
+            "BENEFIT_02": "Experiência com pequenos ou grandes projetos",
+            "BENEFIT_03": "Alta qualidade em todas as entregas",
+            "BENEFIT_04": "Cuidado em cada pixel com Design e Front-end impecáveis",
+            "BENEFIT_05": "Mobile em primeiro lugar, sem limite de tamanho de tela",
+            "BENEFIT_06": "Reports e visibilidade total do andamento do trabalho"
+        },
+        "FIND_US": {
+            "TITLE": "Você pode nos encontrar por aqui:"
+        }
+    }
+
+}

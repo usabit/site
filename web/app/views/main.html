@@ -3,15 +3,30 @@
     <!-- Carousel -->
     <div class="home-carousel">
         <div owlcarousel owl-options="owlOptions" class="owl-carousel">
-            <div class="item" ng-repeat="item in owlItens">
-                <div class="owl-carousel-item {{item.className}}">
+            <div class="item">
+                <div class="owl-carousel-item carousel-01">
                     <div class="container-fluid">
                         <div class="row">
                             <div class="col-xs-12 col-md-6">
                                 <div class="well well-lg">
-                                    <h1>{{item.title}}</h1>
-                                    <p class="hidden-xs">{{item.text}}</p>
-                                    <p><a href="{{item.url}}">{{item.callToAction}} <i class="fa fa-chevron-circle-right"></i></a></p>
+                                    <h1 ng-bind-html="'HOME.BANNERS.01_TITLE'|translate">Experimente trabalhar com uma equipe de desenvolvimento de software simples e eficiente.</h1>
+                                    <p class="hidden-xs" ng-bind-html="'HOME.BANNERS.01_TEXT'|translate">Aqui na usabit não filosofamos nem reinventamos a roda. Nós somos um pequeno escritório que desenha softwares com perfeição. Em todos os aspectos.</p>
+                                    <p><a href="{{path}}/blog"><span ng-bind-html="'HOME.BANNERS.01_CALLTO'|translate"></span> <i class="fa fa-chevron-circle-right"></i></a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="owl-carousel-item carousel-02">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-xs-12 col-md-6">
+                                <div class="well well-lg">
+                                    <h1 ng-bind-html="'HOME.BANNERS.02_TITLE'|translate">Para ganhar velocidade nos leilões que você participa, peça ajuda aos nossos ninjas.</h1>
+                                    <p class="hidden-xs" ng-bind-html="'HOME.BANNERS.02_TEXT'|translate">Com o Spidy.Ninja, cadastre dezenas, centenas ou milhares de produtos de forma eficiente, reduzindo erros e em menos da metade do tempo.</p>
+                                    <p><a href="http://spidy.ninja/"><span ng-bind-html="'HOME.BANNERS.02_CALLTO'|translate">Conheça o site exclusivo do Spidy</span> <i class="fa fa-chevron-circle-right"></i></a></p>
                                 </div>
                             </div>
                         </div>
@@ -28,10 +43,19 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-xs-12">
-                    <h2>Do que você precisa?</h2>
+                    <h2 ng-bind-html="'HOME.WHAT_YOU_NEED.TITLE'|translate">Do que você precisa?</h2>
                     <div class="row">
                         <div class="col-xs-12">
-                            <ui-select ng-model="selectedComboType.selected" theme="selectize" ng-disabled="disabled" style="width: 200px;">
+                            <select ng-model="selectedComboType" ng-options="item.label for item in comboType"></select>
+
+                            <select ng-show="isOption1" ng-model="selectedComboSuporte" ng-options="item.label for item in comboSuporte"></select>
+
+                            <select ng-show="isOption2" ng-model="selectedComboProjeto" ng-options="item.label for item in comboProjeto"></select>
+
+                            <select ng-show="isOption3" ng-model="selectedComboTreinamento" ng-options="item.label for item in comboTreinamento"></select>
+
+                            <select ng-show="isOption4" ng-model="selectedComboConsultoria" ng-options="item.label for item in comboConsultoria"></select>
+                            <!--<ui-select ng-model="selectedComboType.selected" theme="selectize" ng-disabled="disabled" style="width: 200px;">
                                 <ui-select-match placeholder="">{{$select.selected.label}}</ui-select-match>
                                 <ui-select-choices repeat="type in comboType | filter: $select.search">
                                     <span ng-bind-html="type.label | highlight: $select.search"></span>
@@ -60,8 +84,8 @@
                                 <ui-select-choices repeat="itemConsultoria in comboConsultoria | filter: $select.search">
                                     <span ng-bind-html="itemConsultoria.label | highlight: $select.search"></span>
                                 </ui-select-choices>
-                            </ui-select>
-                            <a class="btn btn-primary" href="" ng-click="submit()">Começar</a>
+                            </ui-select>-->
+                            <a class="btn btn-primary" href="" ng-click="submit()" ng-bind-html="'HOME.WHAT_YOU_NEED.SUBMIT_BTN'|translate"></a>
                         </div>
                     </div>
                 </div>
@@ -99,35 +123,47 @@
     <div class="container-fluid">
         <div class="row row-goals">
             <div class="col-xs-12">
-                <h2>A Usabit ajuda a alcançar seus objetivos</h2>
+                <h2 ng-bind-html="'HOME.YOUR_GOALS.TITLE'|translate">A Usabit ajuda a alcançar seus objetivos</h2>
             </div>
             <div class="col-xs-12 col-sm-6 col-md-3">
                 <img src="images/objetivo-01.png" alt="">
-                <p>Alcançar mais clientes online</p>
+                <p ng-bind-html="'HOME.YOUR_GOALS.GOAL_01'|translate">Alcançar mais clientes online</p>
             </div>
             <div class="col-xs-12 col-sm-6 col-md-3">
                 <img src="images/objetivo-02.png" alt="">
-                <p>Ser mais eficiente otimizando processos</p>
+                <p ng-bind-html="'HOME.YOUR_GOALS.GOAL_02'|translate">Ser mais eficiente otimizando processos</p>
             </div>
             <div class="col-xs-12 col-sm-6 col-md-3">
                 <img src="images/objetivo-03.png" alt="">
-                <p>Tomar decisões melhores através de dados gerenciais</p>
+                <p ng-bind-html="'HOME.YOUR_GOALS.GOAL_03'|translate">Tomar decisões melhores através de dados gerenciais</p>
             </div>
             <div class="col-xs-12 col-sm-6 col-md-3">
                 <img src="images/objetivo-04.png" alt="">
-                <p>Tirar grandes ideias de negócio do papel</p>
+                <p ng-bind-html="'HOME.YOUR_GOALS.GOAL_04'|translate">Tirar grandes ideias de negócio do papel</p>
             </div>
         </div>
         <div class="row row-advantages">
             <div class="col-xs-12">
-                <h2>Um tanto de vantagens imediatas ;)</h2>
+                <h2 ng-bind-html="'HOME.BENEFITS.TITLE'|translate">Um tanto de vantagens imediatas ;)</h2>
                 <ul>
-                    <li>Perfis Senior que solucionam problemas  de forma rápida <span class="like-1"><i class="fa fa-thumbs-o-up"></i></span></li>
-                    <li>Experiência com pequenos ou grandes projetos <span class="like-2"><i class="fa fa-thumbs-o-up"></i></span></li>
-                    <li>Alta qualidade em todas as entregas <span class="like-3"><i class="fa fa-thumbs-o-up"></i></span></li>
-                    <li>Cuidado em cada pixel com Design e Front-end impecáveis <span class="like-4"><i class="fa fa-thumbs-o-up"></i></span></li>
-                    <li>Mobile em primeiro lugar, sem limite de tamanho de tela <span class="like-5"><i class="fa fa-thumbs-o-up"></i></span></li>
-                    <li>Reports e visibilidade total do andamento do trabalho <span class="like-6"><i class="fa fa-thumbs-o-up"></i></span></li>
+                    <li>
+                        <span ng-bind-html="'HOME.BENEFITS.BENEFIT_01'|translate">Perfis Senior que solucionam problemas de forma rápida</span>   <span class="like like-1"><i class="fa fa-thumbs-o-up"></i></span>
+                    </li>
+                    <li>
+                        <span ng-bind-html="'HOME.BENEFITS.BENEFIT_02'|translate">Experiência com pequenos ou grandes projetos</span> <span class="like like-2"><i class="fa fa-thumbs-o-up"></i></span>
+                    </li>
+                    <li>
+                        <span ng-bind-html="'HOME.BENEFITS.BENEFIT_03'|translate">Alta qualidade em todas as entregas</span> <span class="like like-3"><i class="fa fa-thumbs-o-up"></i></span>
+                    </li>
+                    <li>
+                        <span ng-bind-html="'HOME.BENEFITS.BENEFIT_04'|translate">Cuidado em cada pixel com Design e Front-end impecáveis</span> <span class="like like-4"><i class="fa fa-thumbs-o-up"></i></span>
+                    </li>
+                    <li>
+                        <span ng-bind-html="'HOME.BENEFITS.BENEFIT_05'|translate">Mobile em primeiro lugar, sem limite de tamanho de tela</span> <span class="like like-5"><i class="fa fa-thumbs-o-up"></i></span>
+                    </li>
+                    <li>
+                        <span ng-bind-html="'HOME.BENEFITS.BENEFIT_06'|translate">Reports e visibilidade total do andamento do trabalho</span> <span class="like like-6"><i class="fa fa-thumbs-o-up"></i></span>
+                    </li>
                 </ul>
                 <!--<dl class="dl-horizontal">
                     <dt>Profissionais de perfil Senior...</dt>
@@ -152,7 +188,7 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-xs-12 col-sm-6">
-                    <h3>Você pode nos encontrar por aqui:</h3>
+                    <h3 ng-bind-html="'HOME.FIND_US.TITLE'|translate">Você pode nos encontrar por aqui:</h3>
                 </div>
                 <div class="col-xs-12 col-sm-6">
                     <ul>
