@@ -1,0 +1,5 @@
+[04-May-2015 20:30:02 America/Sao_Paulo] PHP Parse error:  syntax error, unexpected 'não' (T_STRING), expecting ',' or ';' in /home/reschdes/public_html/api/contato.php on line 71
+[04-May-2015 20:40:53 America/Sao_Paulo] PHP Warning:  Invalid argument supplied for foreach() in /home/reschdes/public_html/api/contato.php on line 14
+[25-Aug-2015 01:45:09 America/Sao_Paulo] PHP Deprecated:  Function split() is deprecated in /home/reschdes/public_html/api/phpmailer/class.phpmailer.php on line 477
+[25-Aug-2015 01:46:05 America/Sao_Paulo] PHP Deprecated:  Function split() is deprecated in /home/reschdes/public_html/api/phpmailer/class.phpmailer.php on line 477
+[05-Nov-2015 19:37:41 America/Sao_Paulo] PHP Deprecated:  Function split() is deprecated in /home/reschdes/public_html/api/phpmailer/class.phpmailer.php on line 477
