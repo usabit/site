@@ -1,0 +1,23 @@
+{
+  "name": "usabit.github.io",
+  "version": "0.0.1",
+  "authors": [
+    "usabit <contato@usabit.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "build/assets/vendor",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "font-awesome": "~4.5.0",
+    "rss-parser": "^2.2.4"
+  },
+  "devDependencies": {
+    "jquery": "^2.2.1"
+  }
+}

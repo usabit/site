@@ -1,0 +1,35 @@
+{
+  "name": "usabit.github.io",
+  "version": "0.0.1",
+  "description": "Site Usabit 2016",
+  "main": "index.js",
+  "scripts": {
+    "start": "http-server ./build -o",
+    "prestart": "npm install",
+    "postinstall": "bower install && gulp build"
+  },
+  "author": "usabit <contato@usabit.com.br>",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer-stylus": "^0.9.1",
+    "bower": "^1.7.7",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-htmlmin": "^1.3.0",
+    "gulp-imagemin": "^2.4.0",
+    "gulp-jshint": "^2.0.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-strip-debug": "^1.1.0",
+    "gulp-stylus": "^2.3.0",
+    "gulp-uglify": "^1.5.3",
+    "imagemin-pngquant": "^4.2.2",
+    "jeet": "^6.1.2",
+    "jshint": "^2.9.1",
+    "jshint-stylish": "^2.1.0",
+    "kouto-swiss": "^0.11.14",
+    "nib": "^1.1.0",
+    "rupture": "^0.6.1"
+  }
+}

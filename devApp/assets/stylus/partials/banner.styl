@@ -1,0 +1,115 @@
+.banner
+  min-height 100vh
+  display flex
+  align-items center
+  
+  .banner-wrap
+    width 880px
+    display flex
+    justify-content space-around
+    margin 50px auto
+    +above(1350px)
+      width 1000px
+    +below(910px)
+      justify-content space-around
+    
+.iphone-wrap
+  position relative
+  margin-right 20px
+
+  +below(910px)
+    display none
+    border 1px dashed white
+  
+  .iphone-screen
+    position absolute
+    top 0
+    z-index 0
+  
+  .iphone-mockup
+    z-index 1
+    
+.text-wrap
+  width 564px
+  color white
+  line-height 1.5
+  display flex
+  justify-content center
+  flex-direction column
+  font-size 18px
+  
+  +below(910px)
+    width 80%
+  
+  .usabit
+    padding-bottom 30px
+    margin-bottom 25px
+    border-bottom 5px solid white
+    align-self stretch
+
+    #usabit-logo
+      width 100px
+      path
+        fill white
+    
+  .sub-tittle
+    font-weight 700
+    font-size 30px
+    margin-bottom 30px
+  
+  .call-to-action-list
+    margin-top 55px
+    
+  .call-to-action-item
+    float left
+    margin-right 10px
+    margin-bottom 10px
+    font-weight 300
+    
+    &:last-child
+      margin-right 0
+    
+    a
+      text-decoration none
+      background-color #252525
+      color white
+      width 165px
+      padding 10px 0
+      text-align center
+      display inline-block
+      border-radius 3px
+      transition all .1s
+      &:hover
+        background-color #252525 + 10%
+      
+    &.contato
+      a
+        background-color #0069a6
+        &:hover
+          background-color #0069a6 + 10%
+    
+.scroll-down
+  position absolute
+  left 50%
+  transform translateX(-50%)
+  bottom 0
+  height 100px
+  animation pulse 1.5s infinite
+  +below(910px)
+    display none
+
+
+#icon
+  width 60px
+  animation pulse 1.5s infinite
+  
+@keyframes pulse
+  0%
+    opacity .7
+    bottom 0
+  50%
+    opacity 1
+    bottom 10px
+  100%
+    opacity .7
+    bottom 0
