@@ -65,11 +65,28 @@ section.cases
       
       &.simple
         font-size 32px
+        line-height 1.2
         margin 135px auto
         padding-right 17%
         color #5d5d5d
         background-color transparent
         height initial
+        +below(800px)
+          font-size 28px
+          margin 85px auto
+        
+        &.center
+          width 80%
+          max-width 600px
+          font-size 38px
+          font-weight 700 !important
+          text-align center !important
+          color #223d6a
+          padding-left 0 !important
+          padding-right 0 !important
+          margin-bottom 30px
+          +below(800px)
+            font-size 30px
       
       &:nth-of-type(even)
         &.simple
@@ -129,9 +146,12 @@ section.cases
           a
             color #333
             opacity .3
+            cursor pointer
             &:hover 
               opacity .7
               transition all .2s
+            .margin-top
+              margin-top 4px
           
     li.cases-list-item
       +below(800px)

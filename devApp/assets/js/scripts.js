@@ -48,6 +48,5 @@ function getRandomInt(min, max) {
 
 if(geoplugin_countryName() != 'Brazil'){
   // console.log('colocar em ingles');
-}else{
-  // console.log('br');
+  document.querySelector('.google_translate').style.display = 'block';
 }
