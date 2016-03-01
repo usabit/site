@@ -48,62 +48,102 @@ section.cases
           margin-top 82px
           &.reflection
             z-index 3
-        
+            
   .cases-list
-    .cases-list-item
+    > .cases-list-item
       height 350px
-      background white
-      width 100%
       max-width 1000px
+      width 90%
       margin 0 auto
-      display flex
+      background-color white
+      color #333333
       margin-bottom 50px
       &:last-child
         margin-bottom 0
-        
-      &:nth-child(even)
+      
+      display flex
+      
+      &.simple
+        font-size 32px
+        margin 135px auto
+        padding-right 17%
+        color #5d5d5d
+        background-color transparent
+        height initial
+      
+      &:nth-of-type(even)
+        &.simple
+          display block
+          text-align right
+          padding-left 17%
+          padding-right 0
         .item-brief
-          order 1
+          order -1
           
-        .featured-wrap
-          order 2
+      +below(800px)
+        flex-direction row
       
       .featured-wrap
         width 57%
-        background-position 50% 50%
+        height 100%
         background-size cover
-        
+        background-position 50% 50%
+      
       .item-brief
         width 43%
         display flex
-        justify-content space-around
         flex-direction column
+        justify-content space-between
+        align-items flex-start
+        padding 40px
+        text-align left
+                
         .brief-tag
-          background-color #333333
           padding 7px 9px
-          font-weight 200
           font-size 11px
+          background-color #ccc
+          color white
           text-transform uppercase
+          
+          &.green
+            background-color #22a119
+          &.blue
+            background-color #1474eb
           &.orange
             background-color #ef9912
-
+            
         h4
-          color #333333
           font-size 26px
           font-weight 800
           text-transform uppercase
+        
         p
-          color #333333
           font-size 18px
-          line-heigth 1.5
-
-
-
-
-
-
-
-
-
-
-
+          
+        .app-link
+          font-size 30px
+          margin 0 15px 15px 0
+          > li
+            float left
+            margin-right 15px
+          a
+            color #333
+            opacity .3
+            &:hover 
+              opacity .7
+              transition all .2s
+          
+    li.cases-list-item
+      +below(800px)
+        flex-direction column
+        height initial
+        
+        .featured-wrap, .item-brief
+          width 100%
+          order 1 !important
+          
+        .featured-wrap
+          height 200px
+          
+        .item-brief
+          min-height 290px

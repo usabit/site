@@ -66,15 +66,70 @@
           <h4>Alerta Oferta</h4>
           <p>Cadastre seus produtos favoritos no aplicativo e seja avisado quando seu preço baixar no supermercado mais perto de você.</p>
           <ul class="app-link">
+            <li><a href="#"><i class="fa fa-android"></i></a></li>
             <li><a href="#"><i class="fa fa-windows"></i></a></li>
+          </ul>
+        </div>
+
+      <li class="cases-list-item">
+        <div class="featured-wrap" style="background-image: url('assets/img/cases/aliga.jpg')"></div>
+        <div class="item-brief">
+          <div class="brief-tag blue">desenvolvimento</div>
+          <h4>A Liga</h4>
+          <p>Com A Liga, aquele futebol de domingo nunca mais será o mesmo. Organize seu time, contrate, desafie outros times e seja o grande campeão.</p>
+          <ul class="app-link">
+            <li><a href="#"><i class="fa fa-android"></i></a></li>
+            <li><a href="#"><i class="fa fa-windows"></i></a></li>
+            <li><a href="#"><i class="fa fa-apple"></i></a></li>
+          </ul>
+        </div>
+      </li>
+
+      <div class="cases-list-item simple">
+        A Usabit participa de projetos desde a concepção até o lançamento, levando ao mercado produtos digitais de sucesso.
+      </div>
+
+      <li class="cases-list-item">
+        <div class="featured-wrap" style="background-image: url('assets/img/cases/spidy.ninja.jpg')"></div>
+        <div class="item-brief">
+          <div class="brief-tag green">lançado</div>
+          <h4>spidy.ninja</h4>
+          <p>Participe de pregões eletrônicos do Governo Federal com muito mais agilidade e gerencie seus produtos online, de qualquer lugar.</p>
+          <ul class="app-link">
+            <li><a href="#"><i class="fa fa-desktop"></i></a></li>
+            <li><a href="#"><i class="fa fa-mobile"></i></a></li>
+          </ul>
+        </div>
+      </li>
+
+
+      <div class="cases-list-item simple">Nossa experiência em desenvolvimento de software, design e marketing nos permite lançar novos produtos todos os meses.</div>
+
+      <li class="cases-list-item">
+        <div class="featured-wrap" style="background-image: url('assets/img/cases/fiscaldebolso.jpg')"></div>
+        <div class="item-brief">
+          <div class="brief-tag green">lançado</div>
+          <h4>Fiscal de bolso</h4>
+          <p>Fiscalize os ônibus da cidade direto do seu smartphone, fazendo reclamações e sugestões, registrando foto das infrações.</p>
+          <ul class="app-link">
+            <li><a href="#"><i class="fa fa-android"></i></a></li>
+            <li><a href="#"><i class="fa fa-windows"></i></a></li>
+            <li><a href="#"><i class="fa fa-apple"></i></a></li>
           </ul>
         </div>
       </li>
 
       <li class="cases-list-item">
-        <div class="featured-wrap" style="background-image: url('assets/img/cases/aliga.jpg')"></div>
+        <div class="featured-wrap" style="background-image: url('assets/img/cases/liveshop.jpg')"></div>
         <div class="item-brief">
-          asd
+          <div class="brief-tag orange">pré-lançamento</div>
+          <h4>Live Shop</h4>
+          <p>Aproveite as melhores promoções em m novo conceito de compras em shoppings centers baseado na interação social e internet. </p>
+          <ul class="app-link">
+            <li><a href="#"><i class="fa fa-android"></i></a></li>
+            <li><a href="#"><i class="fa fa-windows"></i></a></li>
+            <li><a href="#"><i class="fa fa-apple"></i></a></li>
+          </ul>
         </div>
       </li>
 
@@ -109,25 +164,12 @@
       </ul>
     </div>
   </footer>
-<script>
-  $(document).ready(function(){
-    console.log('ready');
-
-    $('.screen').each(function(){
-      var $obj = $(this);
-     
-      $(window).scroll(function() {
-        var yPos = -($(window).scrollTop() / ($obj.data('speed') * 10));
-        var imgPos = yPos + 'px';
-        if (yPos < -82){ imgPos = -82; }
-
-        console.log('yPos', yPos, 'imgPos', imgPos);
-     
-        $obj.css('top', imgPos);
-     
-      }); 
+  <script src="assets/js/main.js"></script>
+  <script>
+    randomizeCasesHeader();
+    document.addEventListener('DOMContentLoaded', function () {
+      iphoneParallax();
     });
-  });
-</script>
+  </script>
 </body>
 </html>
