@@ -32,7 +32,6 @@
 </head>
 <script src="http://www.geoplugin.net/javascript.gp"></script>
 <script src="assets/vendor/jquery/dist/jquery.min.js"></script>
-<script src="assets/vendor/rss-parser/dist/rss-parser.js"></script>
 
 <body>
 
@@ -44,8 +43,18 @@
   js.src = "//connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.5&appId=707745562698386";
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
+<script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'pt', includedLanguages: 'en,es,pt', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+}
+</script>
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
+  <div class="google_translate">
+    <div id="google_translate_element"></div>
+  </div>
   <section class="banner" style="background-color: #f9615b">
+    
     <div class="banner-wrap">
       <div class="iphone-wrap">
         <div class="iphone-mockup">
@@ -73,7 +82,7 @@
 
         <ul class="call-to-action-list">
           <li class="call-to-action-item"><a href="https://www.linkedin.com/company/2600370"><i class="fa fa-linkedin"></i>Mais sobre nós</a></li>
-          <!-- <li class="call-to-action-item"><a href="#">Cases</a></li> -->
+          <li class="call-to-action-item"><a href="cases.html">Cases</a></li>
           <li class="call-to-action-item contato"><a href="#contato" onclick="smoothScroll('contato');return false">Contato</a></li>
         </ul>
       </div>
@@ -134,10 +143,15 @@
   </footer>
 
   <script src="assets/js/main.js"></script>
-<!-- BEGIN JIVOSITE CODE {literal} -->
-<script type='text/javascript'>
-(function(){ var widget_id = 'HtVP682mlF';
-var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = '//code.jivosite.com/script/widget/'+widget_id; var ss = document.getElementsByTagName('script')[0]; ss.parentNode.insertBefore(s, ss);})();</script>
-<!-- {/literal} END JIVOSITE CODE -->
+
+  <script>
+    randomizeBanner();
+  </script>
+
+  <!-- BEGIN JIVOSITE CODE {literal} -->
+  <script type='text/javascript'>
+  (function(){ var widget_id = 'HtVP682mlF';
+  var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = '//code.jivosite.com/script/widget/'+widget_id; var ss = document.getElementsByTagName('script')[0]; ss.parentNode.insertBefore(s, ss);})();</script>
+  <!-- {/literal} END JIVOSITE CODE -->
 </body>
 </html>

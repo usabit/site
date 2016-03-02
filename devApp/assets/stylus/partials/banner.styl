@@ -1,8 +1,25 @@
+.google_translate
+  display none
+  position fixed
+  background-color white
+  z-index 999
+  top 0
+  height 32px
+  left 0
+  right 0
+  
+  #google_translate_element
+    position absolute
+    top 5px
+    left 3px
+
+
 .banner
   min-height 100vh
   display flex
   align-items center
-  
+  position relative
+    
   .banner-wrap
     width 880px
     display flex
@@ -81,6 +98,9 @@
       transition all .1s
       &:hover
         background-color #252525 + 10%
+        
+      &:first-letter
+        text-transform capitalize
       
       i
         margin-right 7px

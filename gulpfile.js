@@ -46,8 +46,19 @@ gulp.task('scripts', function() {
   ;
 });
 
+gulp.task('buildScripts', function(){
+  return gulp.src(devFolder+'assets/js/*.js')
+    .pipe(plumber())
+    .pipe(jshint())
+    .pipe(jshint.reporter('jshint-stylish'))
+    .pipe(stripDebug())
+    .pipe(concat('main.js'))
+    .pipe(uglify())
+    .pipe(gulp.dest(buildFolder+'assets/js'))
+  ;
+});
+
 gulp.task('styles', function(){
-  console.log()
   return gulp.src(devFolder+'assets/stylus/include.styl')
     .pipe(plumber())
     .pipe(sourcemaps.init())
@@ -79,7 +90,7 @@ gulp.task('images', function () {
 
 /////////////////////////////////////////////////////////////////////////
 
-gulp.task('build', ['styles', 'minifyHtml', 'images', 'scripts']);
+gulp.task('build', ['styles', 'minifyHtml', 'images', 'buildScripts']);
 
 gulp.task('default', ['styles', 'minifyHtml', 'images', 'scripts'], function(){
   gulp.watch(devFolder+'assets/stylus/**/*.styl', ['styles']);

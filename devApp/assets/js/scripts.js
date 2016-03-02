@@ -36,7 +36,7 @@ function smoothScroll(eID) {
       leapY += step; if (leapY > stopY) leapY = stopY; timer++;
     } return;
   }
-  for ( var i=startY; i>stopY; i-=step ) {
+  for ( var o=startY; o>stopY; o-=step ) {
     setTimeout("window.scrollTo(0, "+leapY+")", timer * speed);
     leapY -= step; if (leapY < stopY) leapY = stopY; timer++;
   }
@@ -46,15 +46,7 @@ function getRandomInt(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
-// $.getJSON("http://freegeoip.net/json/", function(data) {
-//   var country = data.country_name;
-//   var ip = data.ip;
-//   alert("country " + country);
-//   alert("IP " + ip);
-// });
-
 if(geoplugin_countryName() != 'Brazil'){
   // console.log('colocar em ingles');
-}else{
-  // console.log('br');
+  document.querySelector('.google_translate').style.display = 'block';
 }
