@@ -46,7 +46,18 @@ function getRandomInt(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
-if(geoplugin_countryName() != 'Brazil'){
-  // console.log('colocar em ingles');
-  document.querySelector('.google_translate').style.display = 'block';
-}
+
+document.addEventListener('DOMContentLoaded', function () {
+  if (window.location.href.indexOf("/en") == -1){
+    $.getJSON("http://freegeoip.net/json/", function(data) {
+      var country = data.country_code;
+      var ip = data.ip;
+
+      console.log(country);
+
+      if(country != 'BR'){
+        location.href = '/en';
+      }
+    });
+  }
+});

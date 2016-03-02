@@ -73,7 +73,7 @@ gulp.task('styles', function(){
 });
 
 gulp.task('minifyHtml', function() {
-  return gulp.src(devFolder+'*.html')
+  return gulp.src(devFolder+'**/*.html')
     .pipe(htmlmin({collapseWhitespace: true, removeEmptyElements: false, removeEmptyAttributes: true, removeComments: true}))
     .pipe(gulp.dest(buildFolder))
 });
@@ -94,7 +94,7 @@ gulp.task('build', ['styles', 'minifyHtml', 'images', 'buildScripts']);
 
 gulp.task('default', ['styles', 'minifyHtml', 'images', 'scripts'], function(){
   gulp.watch(devFolder+'assets/stylus/**/*.styl', ['styles']);
-  gulp.watch(devFolder+'*.html', ['minifyHtml']);
+  gulp.watch(devFolder+'**/*.html', ['minifyHtml']);
   gulp.watch(devFolder+'assets/img/*', ['images']);
   gulp.watch(devFolder+'assets/js/*', ['scripts']);
 });
