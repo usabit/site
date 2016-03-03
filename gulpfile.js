@@ -35,7 +35,6 @@ var stylish     = require('jshint-stylish');
 // dev modules
 var rename      = require('gulp-rename');
 var bower       = require('gulp-bower');
-var del         = require('del');
  
 gulp.task('scripts', function() {
   return gulp.src(devFolder+'assets/js/*.js')
@@ -90,17 +89,13 @@ gulp.task('images', function () {
     .pipe(gulp.dest(buildFolder+'assets/img/'));
 });
 
-gulp.task('bower', ['clear'], function() {
+gulp.task('bower', function() {
   return bower();
 });
 
-gulp.task('clear', function()) {
-  return del(['build/']);
-}
-
 /////////////////////////////////////////////////////////////////////////
 
-gulp.task('build', ['bower', 'styles', 'minifyHtml', 'images', 'buildScripts']);
+gulp.task('build', ['styles', 'minifyHtml', 'images', 'buildScripts', 'bower']);
 
 gulp.task('default', ['styles', 'minifyHtml', 'images', 'scripts'], function(){
   gulp.watch(devFolder+'assets/stylus/**/*.styl', ['styles']);
