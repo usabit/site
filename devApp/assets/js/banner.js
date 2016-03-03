@@ -12,7 +12,7 @@ function randomizeBanner(){
     carrets[i].style.color = activeColor;
   }
 
-  imgSrc = "assets/img/tela-iphone-0" + activeColorId + ".png"
+  imgSrc = "assets/img/tela-iphone-0" + activeColorId + ".png";
 
   if(window.location.href.indexOf("/en") > -1) {
      imgSrc = '../' + imgSrc;
