@@ -15,9 +15,6 @@
   ],
   "dependencies": {
     "font-awesome": "~4.5.0",
-    "rss-parser": "^2.2.4"
-  },
-  "devDependencies": {
     "jquery": "^2.2.1"
   }
 }

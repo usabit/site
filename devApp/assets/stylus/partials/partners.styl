@@ -11,23 +11,32 @@ section.partners-content
     color #5d5d5d
     p
       margin 30px 0
-
+      
   .partners-list
     padding 50px 0
-    overflow hidden
+    color #252525
+    
     .partners-list-item
+      // > *
+      //   border 1px dashed red
+      // border 1px dashed goldenrod
+
       display flex
-      color #252525
-      // background-color white
       width 90%
       max-width 1000px
       margin 150px auto
-
-      &:first-child
+      &:first-child 
         margin-top 0
-      &:first-child
+      &:last-child
         margin-bottom 0
+        
+      +below(800px)
+        margin 100px auto
+        
       
+      img
+        max-width 100%
+        
       h4
         font-size 22px
         font-weight 600
@@ -38,40 +47,57 @@ section.partners-content
           &:hover
             color alpha(#0077b5, .8)
             transition .2s
-            
+      
       small
+        display block
         margin 10px 0
         padding-bottom 20px
-        border-bottom 3px solid #191919
-        display block
-        color #191919
         text-transform uppercase
-
+        border-bottom 3px solid #191919
+        color #191919
+        
       p
         margin 20px 0
         font-size 18px
         line-height 1.4
         &:first-child
           margin-top 0
-        &:last-child
+        &:last-child 
           margin-bottom 0
-
+          
       .featured-wrap
+        min-width 300px
+        max-width 300px
+        width 300px
+
         +below(800px)
-          order 0 !important
+          min-width 90px
+          max-width 90px
+          width 90px
+          // order 0 !important
         +below(500px)
           display none
-        img
-          max-width 300px
-          +below(800px)
-            max-width 90px
-            margin-right 20px
-
+          
       .partner-brief
-        +below(800px)
-          padding 0 !important
-          text-align left !important
         padding-left 40px
+        
+        +below(800px)
+          padding-left 20px
+        
+        +below(500px)
+          padding 0
+          
+      +above(800px)
+        &:nth-of-type(even)
+          .featured-wrap
+            order 1
+          .partner-brief
+            padding 0 40px 0 0
+            text-align right
+
+  /*
+  .partners-list
+    .partners-list-item
           
       &:nth-of-type(even)
         .featured-wrap
@@ -80,4 +106,4 @@ section.partners-content
           padding-left 0
           padding-right 40px
           text-align right
-            
+  */
