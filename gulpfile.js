@@ -1,16 +1,16 @@
-var devFolder = 'devApp/'
-  , buildFolder = 'build/'
-  ;
+var devFolder = "devApp/";
+var excludeFolder = "!devApp/";
+var buildFolder = "build/";
 
 var gulp        = require('gulp');
 var concat      = require('gulp-concat');
-
+var connect     = require('gulp-connect');
 // general modules
 var plumber     = require('gulp-plumber');
 
 // html modules
 
-var htmlmin     = require('gulp-htmlmin');
+var jade     = require('gulp-jade');
 
 // image modules
 
@@ -44,6 +44,7 @@ gulp.task('scripts', function() {
     .pipe(concat('main.js'))
     .pipe(uglify())
     .pipe(gulp.dest(buildFolder+'assets/js'))
+    .pipe(connect.reload())
   ;
 });
 
@@ -56,6 +57,7 @@ gulp.task('buildScripts', function(){
     .pipe(concat('main.js'))
     .pipe(uglify())
     .pipe(gulp.dest(buildFolder+'assets/js'))
+    .pipe(connect.reload())
   ;
 });
 
@@ -70,13 +72,17 @@ gulp.task('styles', function(){
     .pipe(rename("main.css"))
     .pipe(sourcemaps.write('.'))
     .pipe(gulp.dest(buildFolder+'assets/css/'))
+    .pipe(connect.reload())
   ;    
 });
 
-gulp.task('minifyHtml', function() {
-  return gulp.src(devFolder+'**/*.html')
-    .pipe(htmlmin({collapseWhitespace: true, removeEmptyElements: false, removeEmptyAttributes: true, removeComments: true}))
+gulp.task('html', function() {
+  // Vai buscar os arquivos jade dentro de todas as pastas de templates, mas não pega os arquivos dentro de partials.
+  return gulp.src([devFolder + 'templates/**/!(_)*.jade', excludeFolder+'templates/_partials/**', excludeFolder+'templates/_page-blocks/**'])
+    .pipe(jade())
     .pipe(gulp.dest(buildFolder))
+    .pipe(connect.reload())
+  ;
 });
 
 gulp.task('images', function () {
@@ -86,7 +92,9 @@ gulp.task('images', function () {
       svgoPlugins: [{removeViewBox: false}, {cleanupIDs: false}],
       use: [pngquant()]
     }))
-    .pipe(gulp.dest(buildFolder+'assets/img/'));
+    .pipe(gulp.dest(buildFolder+'assets/img/'))
+    .pipe(connect.reload())
+  ;
 });
 
 gulp.task('bower', function() {
@@ -95,11 +103,17 @@ gulp.task('bower', function() {
 
 /////////////////////////////////////////////////////////////////////////
 
-gulp.task('build', ['styles', 'minifyHtml', 'images', 'buildScripts', 'bower']);
+gulp.task('build', ['styles', 'html', 'images', 'buildScripts', 'bower']);
 
-gulp.task('default', ['styles', 'minifyHtml', 'images', 'scripts'], function(){
+gulp.task('default', ['styles', 'html', 'images', 'scripts'], function(){
+
+  connect.server({
+    root: buildFolder,
+    livereload: true
+  });
+
   gulp.watch(devFolder+'assets/stylus/**/*.styl', ['styles']);
-  gulp.watch(devFolder+'**/*.html', ['minifyHtml']);
+  gulp.watch(devFolder+'**/*.jade', ['html']);
   gulp.watch(devFolder+'assets/img/*', ['images']);
   gulp.watch(devFolder+'assets/js/*', ['scripts']);
 });

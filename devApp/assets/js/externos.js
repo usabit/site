@@ -1,3 +1,4 @@
+/* jshint ignore:start */
 /* BEGIN JIVOSITE CODE {literal} */
 (function(){ var widget_id = 'HtVP682mlF';
 var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = '//code.jivosite.com/script/widget/'+widget_id; var ss = document.getElementsByTagName('script')[0]; ss.parentNode.insertBefore(s, ss);})();
@@ -14,3 +15,4 @@ ga('create', 'UA-62134612-1', 'auto');
 ga('send', 'pageview');
 
 /* End Google Analytics */
+/* jshint ignore:end */
