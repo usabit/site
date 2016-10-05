@@ -1,20 +1,4 @@
-.google_translate
-  display none
-  position fixed
-  background-color white
-  z-index 999
-  top 0
-  height 32px
-  left 0
-  right 0
-  
-  #google_translate_element
-    position absolute
-    top 5px
-    left 3px
-
-
-.banner
+section.banner
   min-height 100vh
   display flex
   align-items center
@@ -29,89 +13,73 @@
       width 1000px
     +below(910px)
       justify-content space-around
-    
-.iphone-wrap
-  position relative
-  margin-right 20px
-
-  +below(910px)
-    display none
-    border 1px dashed white
-  
-  .iphone-screen
-    position absolute
-    top 0
-    z-index 0
-  
-  .iphone-mockup
-    z-index 1
-    
-.text-wrap
-  width 564px
-  color white
-  line-height 1.5
-  display flex
-  justify-content center
-  flex-direction column
-  font-size 18px
-  
-  +below(910px)
-    width 80%
-  
-  .usabit
-    padding-bottom 30px
-    margin-bottom 25px
-    border-bottom 5px solid white
-    align-self stretch
-
-    #usabit-logo
-      width 100px
-      path
-        fill white
-    
-  .sub-tittle
-    font-weight 700
-    font-size 30px
-    margin-bottom 30px
-  
-  .call-to-action-list
-    margin-top 55px
-    
-  .call-to-action-item
-    float left
-    margin-right 10px
-    margin-bottom 10px
-    font-weight 300
-    
-    &:last-child
-      margin-right 0
-    
-    a
-      text-decoration none
-      background-color #252525
-      color white
-      width 180px
-      padding 10px 0
-      text-align center
-      display inline-block
-      border-radius 3px
-      transition all .1s
-      &:hover
-        background-color #252525 + 10%
-        
-      &:first-letter
-        text-transform capitalize
       
-      i
-        margin-right 7px
-        font-size 22px
+  .text-wrap
+    width 564px
+    color white
+    line-height 1.5
+    display flex
+    justify-content center
+    flex-direction column
+    font-size 18px
+    
+    +below(910px)
+      width 80%
+    
+    .usabit
+      padding-bottom 30px
+      margin-bottom 25px
+      border-bottom 5px solid white
+      align-self stretch
+
+      #usabit-logo
+        width 100px
+        path
+          fill white
       
-    &.contato
+    .sub-tittle
+      font-weight 700
+      font-size 30px
+      margin-bottom 30px
+    
+    .call-to-action-list
+      margin-top 55px
+      
+    .call-to-action-item
+      float left
+      margin-right 10px
+      margin-bottom 10px
+      font-weight 300
+      
+      &:last-child
+        margin-right 0
+      
       a
-        background-color #0069a6
+        text-decoration none
+        background-color #252525
+        color white
+        width 180px
+        padding 10px 0
+        text-align center
+        display inline-block
+        border-radius 3px
+        transition all .1s
         &:hover
-          background-color #0069a6 + 10%
-    
+          background-color #252525 + 10%
+          
+        &:first-letter
+          text-transform capitalize
+        
+        i
+          margin-right 7px
+          font-size 22px
+        
+      &.contato
+        a
+          background-color #0069a6
+          &:hover
+            background-color #0069a6 + 10%
+
 .scroll-down
   position absolute
   left 50%
@@ -121,7 +89,6 @@
   animation pulse 1.5s infinite
   +below(910px)
     display none
-
 
 #icon
   width 60px
@@ -137,3 +104,47 @@
   100%
     opacity .7
     bottom 0
+    
+section.inner-banner
+  text-align center
+  overflow hidden
+  
+  &.cases
+    background-color #4d78f8
+    
+  &.partners
+    background-color #191919
+  
+  h1.usabit
+    margin 60px 0
+    #usabit-logo
+      width 100px
+      path
+        fill white
+
+  h2
+    margin 110px auto
+    font-size 40px
+    font-weight 600
+    width 750px
+    +below(1200px)
+      width 100%
+      max-width 550px
+    +below(600px)
+      font-size 32px
+      padding 10px
+
+  h3
+    margin 110px 0
+    font-size 20px
+
+  .text-wrap
+    margin 90px auto
+
+    p
+      font-size 18px
+      width 700px
+      max-width 90%
+      margin 20px auto
+      
+

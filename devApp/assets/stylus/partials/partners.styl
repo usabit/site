@@ -1,0 +1,109 @@
+section.partners-content
+  background-image linear-gradient(#fff, #ddd 750px)
+  .pre-textual
+    text-align center
+    max-width 1000px
+    width 80%    
+    font-size 26px
+    line-height 1.2
+    padding 30px 0 30px
+    margin 0 auto
+    color #5d5d5d
+    p
+      margin 30px 0
+      
+  .partners-list
+    padding 50px 0
+    color #252525
+    
+    .partners-list-item
+      // > *
+      //   border 1px dashed red
+      // border 1px dashed goldenrod
+
+      display flex
+      width 90%
+      max-width 1000px
+      margin 150px auto
+      &:first-child 
+        margin-top 0
+      &:last-child
+        margin-bottom 0
+        
+      +below(800px)
+        margin 100px auto
+        
+      
+      img
+        max-width 100%
+        
+      h4
+        font-size 22px
+        font-weight 600
+        a
+          font-size 20px
+          color #0077b5
+          margin-left 10px
+          &:hover
+            color alpha(#0077b5, .8)
+            transition .2s
+      
+      small
+        display block
+        margin 10px 0
+        padding-bottom 20px
+        text-transform uppercase
+        border-bottom 3px solid #191919
+        color #191919
+        
+      p
+        margin 20px 0
+        font-size 18px
+        line-height 1.4
+        &:first-child
+          margin-top 0
+        &:last-child 
+          margin-bottom 0
+          
+      .featured-wrap
+        min-width 300px
+        max-width 300px
+        width 300px
+
+        +below(800px)
+          min-width 90px
+          max-width 90px
+          width 90px
+          // order 0 !important
+        +below(500px)
+          display none
+          
+      .partner-brief
+        padding-left 40px
+        
+        +below(800px)
+          padding-left 20px
+        
+        +below(500px)
+          padding 0
+          
+      +above(800px)
+        &:nth-of-type(even)
+          .featured-wrap
+            order 1
+          .partner-brief
+            padding 0 40px 0 0
+            text-align right
+
+  /*
+  .partners-list
+    .partners-list-item
+          
+      &:nth-of-type(even)
+        .featured-wrap
+          order 1
+        .partner-brief
+          padding-left 0
+          padding-right 40px
+          text-align right
+  */

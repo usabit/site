@@ -1,17 +1,19 @@
 function randomizeCasesHeader(){
-  console.log("randomizeCasesHeader init");
-  var colorsArray = ["#4d78f8"];
+  console.log('randomizeCasesHeader init');
+  var colorsArray = ['#4d78f8'];
 
   var activeColorId = getRandomInt(1, colorsArray.length);
   var activeColor = colorsArray[activeColorId-1];
 
-  document.querySelector("section.cases-banner").style.background = activeColor;
+  if (document.querySelectorAll('section.inner-banner.cases').length > 0){
+    document.querySelector('section.inner-banner.cases').style.background = activeColor;    
+  }
 
   var carrets = document.querySelectorAll('.fa.fa-caret-right');
   for (var i = 0; i < carrets.length; i++){
     carrets[i].style.color = activeColor;
   }
-  console.log("randomizeCasesHeader end");
+  console.log('randomizeCasesHeader end');
 }
 
 function iphoneParallax(){

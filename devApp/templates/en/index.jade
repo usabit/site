@@ -1,0 +1,23 @@
+
+extend ../_layout
+
+block vars
+  - var language = 'en'
+  - var bodyClass = ''
+  - var contatoDark = 'dark'
+  - var title = 'Usabit | App, Site, Software'
+  - var subTitle = 'We are a digital development team. United, integrated and open to the world.'
+  - var subTitleExplanation = 'We create high-tech and handy digital products. In the last 10 years we contributed to the launch of websites, apps, softwares and many other materials that transform and captivate users.'
+  - var btnAboutUs = 'About Us'
+  - var btnCases = 'Cases'
+  - var btnContact = 'Contact'
+
+
+block extraFooter
+  script.
+    randomizeBanner();
+
+block content
+  include ../_page-blocks/index-first-page
+
+  include ../_page-blocks/index-contato

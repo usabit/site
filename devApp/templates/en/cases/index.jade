@@ -1,0 +1,45 @@
+extend ../../_layout
+
+block vars
+  - var language = 'en'
+  - var bodyClass = 'light'
+  - var bannerClass = 'cases'
+  - var contatoDark = 'dark'
+  - var title = 'Cases | Usabit | App, Site, Software'
+  - var subTitle = 'It\'s not about being pretty. It\'s about transforming your business and hit your goals.'
+  - var callToAction = 'Check out our cases.'
+  - var secondSubTitle = 'There is no idea that we can\'t brief and make happen with planning, research and execution. Let\'s talk?'
+
+  - var prelaunch = 'PRE LAUNCH'
+  - var development = 'UNDER DEVELOPMENT'
+  - var release = 'RELEASED'
+
+  - var betweenCases1 = 'Usabit participates in projects from conception to launch, leading successful digital products to market.'
+  - var betweenCases2 = 'Our software development experience, design and marketing let us launch new products every month.'
+
+  - var alertaofertaDescription = 'Register your favorite products and be notified when it prices down in a closer supermarket.'
+
+  - var aligaDescription = 'In A Liga, your casual soccer game won\'t be the same. Organize your team, hire players, challenge other teams and be the winner.'
+
+  - var spidyninjaDescription = 'Participate in electronic auctions of the Brazilian Federal Government and manage your products online, from anywhere.'
+
+  - var fiscaldebolsoDescription = 'Supervise your town bus from your smartphone making complaints, sending suggestions and taking photos of traffic infractions.'
+
+  - var liveshopDescription = 'Take advantage of the best deals in a new concept of shopping based in social interaction.'
+
+
+block extraFooter
+  script.
+    randomizeCasesHeader();
+    document.addEventListener('DOMContentLoaded', function () {
+      iphoneParallax();
+    });
+
+block content
+  include ../../_page-blocks/inner-banner
+
+  include ../../_page-blocks/cases-list
+
+  include ../../_page-blocks/index-contato
+
+  

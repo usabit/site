@@ -1,0 +1,38 @@
+extend ../_layout
+
+block vars
+  - var language = 'pt-br'
+  - var bodyClass = 'light'
+  - var footerClass = 'no-line'
+  - var bannerClass = 'partners'
+  - var title = 'Palavra dos sócios | Usabit | App, Site, Software'
+  - var subTitle = 'Nós queremos fazer parte do seu negócio.'
+
+  - var pretext = '<p>Aqui na Usabit não filosofamos nem reinventamos a roda. Nosso time desenvolve produtos digitais com perfeição, do design ao suporte. Nosso compromisso é com a qualidade e pontualidade na entrega.</p><p>Estamos aqui principalmente para quebrar paradigmas. Mudando a forma como se entrega serviços digitais, atuando lado a lado com você e desempenhando papel de mais que fornecedores: parceiros de confiança.</p>'
+
+  - var pauloName = 'Paulo Rocha'
+  - var pauloLinkedin = 'https://www.linkedin.com/in/paulo-rocha-7aa18a45'
+  - var pauloPosition = 'Sócio, Desenvolvedor'
+  - var pauloImage = '/assets/img/partners/paulo.jpg'
+  - var pauloBrief = '<p>A Usabit permite doar meus dois lados. Todos os dias o pessoal e o profissional estão juntos para fazer uma empresa simples, honesta e transparente.</p><p>Muito além de aplicar o que aprendi e ensinei até hoje no desenvolvimento de software e metodologias ágeis, estou aqui para fazer um time. Eu acredito no fazer juntos, eu gosto de aproveitar o potencial das pessoas.</p><p>Aqui posso realizar não apenas meus planos, mas verdadeiramente contribuir para o sucesso dos nossos clientes. Decisões estratégicas que garantem o funcionamento do projeto e a satisfação de todos os envolvidos.</p>'
+
+  - var rodrigoName = 'Rodrigo Lemos'
+  - var rodrigoLinkedin = 'https://www.linkedin.com/in/rodrigo-lemos-235b9a23'
+  - var rodrigoPosition = 'Sócio, Desenvolvedor'
+  - var rodrigoImage = '/assets/img/partners/rodrigo.jpg'
+  - var rodrigoBrief = '<p>A Usabit é a minha forma de por em prática o que acredito, sem limites. É usar a tecnologia de desenvolvimento de software sem medida, aplicando e evoluindo o conhecimento dia após dia. É ter certeza de que tudo que sai da nossa equipe esta alinhado com o que há de mais atual e vantajoso para nossos clientes.</p><p>Como também sou administrador de empresas por formação, cuido da área financeira da Usa, não deixando que absolutamente nada fuja do controle.</p><p>No passado fui coordenador de front-end de uma empresa de tecnologia e Scrummaster. Hoje trago a experiência adquirida nos últimos 10 anos para garantir a qualidade dos produtos da Usabit.</p>'
+
+  - var rafaelName = 'Rafael Tavares'
+  - var rafaelLinkedin = 'https://www.linkedin.com/in/raftavares'
+  - var rafaelPosition = 'Sócio, Design de produto'
+  - var rafaelImage = '/assets/img/partners/rafael.jpg'
+  - var rafaelBrief = '<p>A Usabit é a união de muitas qualidades. Pra mim, ela é a oportunidade de trabalhar com dois caras e pessoas incríveis, apaixonados por essa causa assim como eu.</p><p>De todos os valores envolvidos, o que me move é a oportunidade de fazer o melhor. Como designer, cada pixel é contado e tem nome próprio. Nossos produtos não são diferentes dos outros. São iguais, só que pensados com foco nos usuários.</p><p>O que trago de bagagem é o contato com pessoas que me ensinam e me proporcionam novas experiências dia após dia.</p>'
+
+block content
+  include ../_page-blocks/inner-banner
+
+  include ../_page-blocks/partner-content
+
+  include ../_page-blocks/index-contato
+
+  

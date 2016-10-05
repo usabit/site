@@ -1,31 +1,19 @@
-section.cases-banner
-  background #4d78f8
-  text-align center
-  overflow hidden
-  h1.usabit
-    margin 60px 0
-    #usabit-logo
-      width 100px
-      path
-        fill white
-        
-  h2
-    margin 110px auto
-    font-size 40px
-    font-weight 600
-    width 750px
-    +below(1200px)
-      width 100%
-      max-width 550px
-    +below(600px)
-      font-size 32px
-      padding 10px
-    
-  h3
-    margin 110px 0
-    font-size 20px
-    
-section.cases
+.iphone-wrap
+  position relative
+  margin-right 20px
+
+  +below(910px)
+    display none
+  
+  .iphone-screen
+    position absolute
+    top 0
+    z-index 0
+  
+  .iphone-mockup
+    z-index 1
+
+section.cases-content
   background-image linear-gradient(#fff, #ddd 750px)
   margin-bottom 50px
   > .header
@@ -116,7 +104,7 @@ section.cases
         text-align left
                 
         .brief-tag
-          padding 7px 9px
+          padding 8px 9px 7px
           font-size 11px
           background-color #ccc
           color white
@@ -136,6 +124,7 @@ section.cases
         
         p
           font-size 18px
+          line-height 1.4
           
         .app-link
           font-size 30px
@@ -161,9 +150,18 @@ section.cases
         .featured-wrap, .item-brief
           width 100%
           order 1 !important
+          overflow hidden
+          height initial
           
         .featured-wrap
-          height 200px
+          height 200px !important
           
         .item-brief
-          min-height 290px
+          display block
+          .brief-tag
+            display inline-block
+            margin-bottom 15px
+          h4
+            margin 15px 0
+          p
+            margin 15px 0

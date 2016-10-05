@@ -1,0 +1,22 @@
+section.partners-content
+  if pretext
+    .pre-textual !{pretext}
+
+  ul.partners-list
+    li.partners-list-item
+      .featured-wrap
+        img(src="#{rodrigoImage}", alt="#{rodrigoName}")
+      .partner-brief
+        h4 #{rodrigoName} #[a(href="#{rodrigoLinkedin}" target="_blank") #[i.fa.fa-linkedin]]
+        small #{rodrigoPosition}
+
+        | !{rodrigoBrief}
+
+    li.partners-list-item
+      .featured-wrap
+        img(src="#{rafaelImage}", alt="#{rafaelName}")
+      .partner-brief
+        h4 #{rafaelName} #[a(href="#{rafaelLinkedin}" target="_blank") #[i.fa.fa-linkedin]]
+        small #{rafaelPosition}
+
+        | !{rafaelBrief}

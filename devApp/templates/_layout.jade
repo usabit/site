@@ -1,0 +1,44 @@
+block vars
+
+if language != 'pt-br'
+  - var langLink = '/' + language
+else
+  - var langLink = ''
+
+doctype html
+html(lang="pt-br")
+  head
+    include _partials/head
+
+  body(class="#{bodyClass}")
+    script(src='/assets/vendor/jquery/dist/jquery.min.js')
+    #fb-root
+    script.
+      (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.5&appId=707745562698386";
+      fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+
+    
+    if language == 'pt-br'
+      .change-lang
+        a(href='/en')
+          img(src='/assets/img/us.png', alt='English')
+          small English Version
+    else
+      .change-lang
+        a(href="/")
+          img(src="/assets/img/br.png" alt="Portuguese")
+    
+    block content
+      
+    include _partials/footer
+
+    script(src='/assets/js/main.js')
+
+    block extraFooter
+
+

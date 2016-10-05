@@ -1,0 +1,48 @@
+extend ../_layout
+
+block vars
+  - var language = 'pt-br'
+  - var bodyClass = 'light'
+  - var bannerClass = 'cases'
+  - var contatoDark = 'dark'
+  - var title = 'Cases | Usabit | App, Site, Software'
+  - var subTitle = 'Não é sobre ser bonito e sim sobre transformar seu negócio e gerar resultados.'
+  - var callToAction = 'Conheça nossos cases.'
+  - var secondSubTitle = 'Não há nenhuma ideia que não possamos rabiscar e tirar do papel, com planejamento, pesquisa e execução. Vamos conversar?'
+  - var btnAboutUs = 'Mais sobre nós'
+  - var btnCases = 'Cases'
+  - var btnContact = 'Contato'
+
+  - var prelaunch = 'pré-lançamento'
+  - var development = 'desenvolvimento'
+  - var release = 'lançado'
+
+  - var betweenCases1 = 'A Usabit participa de projetos desde a concepção até o lançamento, levando ao mercado produtos digitais de sucesso.'
+  - var betweenCases2 = 'Nossa experiência em desenvolvimento de software, design e marketing nos permite lançar novos produtos todos os meses.'
+
+  - var alertaofertaDescription = 'Cadastre seus produtos favoritos no aplicativo e seja avisado quando seu preço baixar no supermercado mais perto de você.'
+
+  - var aligaDescription = 'Com A Liga, aquele futebol de domingo nunca mais será o mesmo. Organize seu time, contrate, desafie outros times e seja o grande campeão.'
+
+  - var spidyninjaDescription = 'Participe de pregões eletrônicos do Governo Federal com muito mais agilidade e gerencie seus produtos online, de qualquer lugar.'
+
+  - var fiscaldebolsoDescription = 'Fiscalize os ônibus da cidade direto do seu smartphone, fazendo reclamações e sugestões, registrando foto das infrações.'
+
+  - var liveshopDescription = 'Aproveite as melhores promoções em um novo conceito de compras em shoppings centers baseado na interação social e internet.'
+
+
+block extraFooter
+  script.
+    randomizeCasesHeader();
+    document.addEventListener('DOMContentLoaded', function () {
+      iphoneParallax();
+    });
+
+block content
+  include ../_page-blocks/inner-banner
+
+  include ../_page-blocks/cases-list
+
+  include ../_page-blocks/index-contato
+
+  
