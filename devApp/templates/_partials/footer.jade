@@ -3,13 +3,13 @@ if language == 'pt-br'
   - var vempronossotime = 'Vem pro nosso time'
   - var palavradossocios = 'Palavra dos Sócios'
   - var sejaumparceiro = 'Seja um parceiro'
-  - var nossosprodutos = 'Nossos produtos'
+  - var nossosprodutos = 'Nossos cases'
 else
   - var country = 'Brazil'
   - var vempronossotime = 'Work with us'
   - var palavradossocios = 'Meet the leaders'
   - var sejaumparceiro = 'Be a partner'
-  - var nossosprodutos = 'Our Products'
+  - var nossosprodutos = 'Our Cases'
 
 footer(class="footer #{footerClass}")
   .global-wrap
@@ -24,25 +24,25 @@ footer(class="footer #{footerClass}")
         li #{country}
         li
           a(href='#') Google Maps
-    //- .footer-item
-    //-   h3 Mais da Usabit
-    //-   ul.more-info-list
-    //-     li
-    //-       a(href='#')
-    //-         i.fa.fa-caret-right(style='color: #f9615b')
-    //-         |  #{vempronossotime}
-    //-     li
-    //-       a(href='#{langLink}/partners/')
-    //-         i.fa.fa-caret-right(style='color: #f9615b')
-    //-         |  #{palavradossocios}
-    //-     li
-    //-       a(href='#')
-    //-         i.fa.fa-caret-right(style='color: #f9615b')
-    //-         |  #{sejaumparceiro}
-    //-     li
-    //-       a(href='#')
-    //-         i.fa.fa-caret-right(style='color: #f9615b')
-    //-         |  #{nossosprodutos}
+    .footer-item
+      h3 Mais da Usabit
+      ul.more-info-list
+        //- li
+        //-   a(href='#')
+        //-     i.fa.fa-caret-right(style='color: #f9615b')
+        //-     |  #{vempronossotime}
+        li
+          a(href='#{langLink}/partners/')
+            i.fa.fa-caret-right(style='color: #f9615b')
+            |  #{palavradossocios}
+        //- li
+        //-   a(href='#')
+        //-     i.fa.fa-caret-right(style='color: #f9615b')
+        //-     |  #{sejaumparceiro}
+        li
+          a(href='#{langLink}/cases/')
+            i.fa.fa-caret-right(style='color: #f9615b')
+            |  #{nossosprodutos}
     ul.social-icons
       li
         a(href='https://github.com/usabit', target='_blank')
